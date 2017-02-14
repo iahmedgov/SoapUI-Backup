@@ -1,0 +1,12 @@
+
+TestCase [SubmitCustomerAccount TestCase] started at 2015-11-16 17:06:17.014
+Step 1 DataSourceRegister finished with status:[OK], took 70ms
+Step 2 SubmitCustomerAccount finished with assertion status:[OK], took 551ms
+Step 3 DataGen1 finished with status:[OK], took 2ms
+Step 4 DataSource Loop finished with status:[OK], took 1ms
+Current row = 1
+Step 5 SubmitCustomerAccount finished with assertion status:[OK], took 519ms
+Step 6 DataGen1 finished with status:[OK], took 36ms
+Step 7 DataSource Loop finished with status:[OK], took 0ms
+Current row = 2
+TestCase [SubmitCustomerAccount TestCase] finished with status [FINISHED], time taken = 558ms
