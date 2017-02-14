@@ -1,0 +1,9 @@
+SubmitCustomerAccount-TestCase.xml
+SubmitWalletAddTokenAutomation.xml
+SubmitPPIPaymentUsingWalletAutomation.xml
+SubmitPPIPaymentTestPositive.xml
+GetVelocityFee-TestCase.xml
+GetVelocityFeeSingle-TestCase.xml
+GetVelocityFeeSingleANDDualAdvanced-TestCase.xml
+GetVelocityFeeNegativeAdvanced-TestCase.xml
+GetVelocityFeeNegative.xml

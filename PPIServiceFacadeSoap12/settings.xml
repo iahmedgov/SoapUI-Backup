@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:WsdlInterface" id="e865bd2c-71f0-4e98-b957-a176fe156690" wsaVersion="NONE" name="PPIServiceFacadeSoap12" type="wsdl" bindingName="{https://www.velocitypayment.com/ws}PPIServiceFacadeSoap12" soapVersion="1_2" anonymous="optional" definition="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e865bd2c-71f0-4e98-b957-a176fe156690fileName">PPIServiceFacadeSoap12</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL"><con:part><con:url>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL</con:url><con:content><![CDATA[<!--Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6.-->
+<wsdl:definitions targetNamespace="https://www.velocitypayment.com/ws" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://www.ePayments.com/PPI" xmlns:s2="http://www.ePayments.com/PPIPayment" xmlns:s3="http://tempuri.org/TransactionData.xsd" xmlns:s4="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="https://www.velocitypayment.com/ws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.velocitypayment.com/ws">
+      <s:import namespace="http://www.ePayments.com/PPI"/>
+      <s:import namespace="http://www.ePayments.com/PPIPayment"/>
+      <s:import namespace="http://tempuri.org/TransactionData.xsd"/>
+      <s:element name="SubmitPPIRecurringPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentId" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="1" name="paymentAmount" type="s:double"/>
+            <s:element maxOccurs="1" minOccurs="0" name="checkNumber" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="feeEntry" type="s2:FeeEntry"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitPPIRecurringPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="SubmitPPIRecurringPaymentResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPPIPaymentTypeSegments">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPPIPaymentTypeSegmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetPPIPaymentTypeSegmentsResult" type="tns:ArrayOfPPIPaymentTypeSegment"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPPIPaymentTypeSegment">
+        <s:sequence>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="PPIPaymentTypeSegment" nillable="true" type="s1:PPIPaymentTypeSegment"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetPPIPaymentFee">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="1" name="paymentAmount" type="s:double"/>
+            <s:element maxOccurs="1" minOccurs="1" name="method" type="s2:PaymentCategory"/>
+            <s:element maxOccurs="1" minOccurs="0" name="clientAccountNumber" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPPIPaymentFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetPPIPaymentFeeResult" type="s1:PPIFeeResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVelocityFee">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="1" name="amount" type="s:double"/>
+            <s:element maxOccurs="1" minOccurs="1" name="paymentType" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="accountNumber" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetVelocityFeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetVelocityFeeResult" type="s1:VelocityFeeResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitPPIPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="payment" type="s1:PPIPayment"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitPPIPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="SubmitPPIPaymentResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyPPIPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentId" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="payment" type="s1:PPIPayment"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyPPIPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="ModifyPPIPaymentResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FinalizePPIPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="confirmationNumber" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="1" name="newPaymentSegmentAmount" type="s:double"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FinalizePPIPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="FinalizePPIPaymentResult" type="s3:PPIFinalizeResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyPPICustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentId" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="customer" type="s1:PPICustomer"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifyPPICustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="ModifyPPICustomerResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoidPPIPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentId" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="code" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="comments" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoidPPIPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="VoidPPIPaymentResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefundPPIPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentId" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="code" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="comments" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="1" name="isRefundMemo" type="s:boolean"/>
+            <s:element maxOccurs="1" minOccurs="1" name="isDiffpaymentAccount" type="s:boolean"/>
+            <s:element maxOccurs="1" minOccurs="0" name="ppiPayment" type="s1:PPIPayment"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RefundPPIPaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="RefundPPIPaymentResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CapturePayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentId" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CapturePaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="CapturePaymentResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIVRTransferOptions">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentType" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIVRTransferOptionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetIVRTransferOptionsResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePPICustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="accountNumber" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidatePPICustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="ValidatePPICustomerResult" type="s3:PPIValidateCustomerResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateFinancialInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="1" name="financialType" type="s1:PPIFinancialType"/>
+            <s:element maxOccurs="1" minOccurs="0" name="input" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateFinancialInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="ValidateFinancialInfoResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReasonCodes">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="1" name="reasonCategory" type="s2:PPIReasonCategoryEnum"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReasonCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetReasonCodesResult" type="tns:ArrayOfPPITransactionReason"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPPITransactionReason">
+        <s:sequence>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="PPITransactionReason" nillable="true" type="s1:PPITransactionReason"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SubmitPPIReturnOrChargeback">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="paymentId" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="code" type="s:string"/>
+            <s:element maxOccurs="1" minOccurs="0" name="comments" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitPPIReturnOrChargebackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="SubmitPPIReturnOrChargebackResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitCustomerAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="accountInformation" type="s1:PPICustomerAccount"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitCustomerAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="SubmitCustomerAccountResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitWalletInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="walletRequest" type="s1:WalletRequest"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitWalletInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="SubmitWalletInformationResult" type="s1:PPIWalletResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWalletInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="walletID" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWalletInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="GetWalletInformationResult" type="s1:PPIGetWalletResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitPPIPaymentUsingWallet">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="token" type="s1:PPIAuthenticationToken"/>
+            <s:element maxOccurs="1" minOccurs="0" name="ppiWalletPayment" type="s1:PPIWalletPayment"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitPPIPaymentUsingWalletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element maxOccurs="1" minOccurs="0" name="SubmitPPIPaymentUsingWalletResult" type="s1:PPIResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ePayments.com/PPI">
+      <s:import namespace="http://www.ePayments.com/PPIPayment"/>
+      <s:import namespace="http://tempuri.org/TransactionData.xsd"/>
+      <s:import namespace="http://tempuri.org/"/>
+      <s:complexType name="PPIAuthenticationToken">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="UserName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Password" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PPITransactionRequestId" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PPIBusinessEntityIdentifierToken" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPIResponse">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultText" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentID" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ApprovalCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="TransactionTime" type="s:dateTime"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ExistingPaymentResultCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Success" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPIPaymentTypeSegment">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentType" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentSegment" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPIFeeResponse">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="PPIFeeValue" type="s:double"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VelocityFeeResponse">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="PPIFeeValue" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="TenderType" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultText" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Success" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPIPayment">
+        <s:complexContent mixed="false">
+          <s:extension base="s1:PPIPaymentBase">
+            <s:sequence>
+              <s:element maxOccurs="1" minOccurs="0" name="Payor" type="s1:PayorInformation"/>
+              <s:element maxOccurs="1" minOccurs="0" name="Vehicle" type="s2:PaymentVehicleInformation"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="PPIPaymentBase">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="AdditionalInfo" type="s1:AdditionalTransactionInformation"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Customer" type="s1:PPICustomer"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ClientAccountNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="PreAuthorizeOnly" type="s:boolean"/>
+          <s:element maxOccurs="1" minOccurs="1" name="PaymentSource" type="s1:PPIPaymentSourceEnum"/>
+        </s:sequence>
+        <s:attribute name="Notes" type="s:string"/>
+      </s:complexType>
+      <s:complexType name="AdditionalTransactionInformation">
+        <s:sequence>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="Fees" type="s2:FeeEntry"/>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="InvoiceData" type="s2:InvoiceDataEntry"/>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="PaymentSegment" type="s2:PaymentSegments"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentType" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="ProcessDate" type="s:dateTime"/>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="CustomData" type="s1:CustomInformation"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CustomInformation">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="ID" type="s3:CustomFieldEnum"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Value" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPICustomer">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="AddressLine1" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="AddressLine2" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Country" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="EmailAddress" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="FirstName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="LastName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="MiddleInitial" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Notes" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PhoneNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Zip" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Username" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Password" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PPIPaymentSourceEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="Unspecified"/>
+          <s:enumeration value="Agent"/>
+          <s:enumeration value="IVR"/>
+          <s:enumeration value="Mail"/>
+          <s:enumeration value="Web"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PayorInformation">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="AccountName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="AddressLine1" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="AddressLine2" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Country" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PhoneNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="FirstName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="LastName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="MiddleInitial" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="EmailAddress" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ZipCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="BusinessName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="IsBusinessName" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PaymentVehicleInformationCheckType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None"/>
+          <s:enumeration value="Business"/>
+          <s:enumeration value="Personal"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="PPIFinancialType">
+        <s:restriction base="s:string">
+          <s:enumeration value="ABA"/>
+          <s:enumeration value="Card"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PPITransactionReason">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="ReasonCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ReasonText" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPICustomerAccount">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="Customer" type="s1:PPICustomer"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Payor" type="s1:PayorInformation"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Vehicle" type="s2:PaymentVehicleInformation"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ClientAccountNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="CustomData" type="s1:CustomInformation"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Action" type="s1:CustomerAccountActionEnum"/>
+          <s:element maxOccurs="1" minOccurs="1" name="MaxAmountForRecurringPayments" type="s:double"/>
+        </s:sequence>
+        <s:attribute name="Notes" type="s:string"/>
+      </s:complexType>
+      <s:simpleType name="CustomerAccountActionEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="Register"/>
+          <s:enumeration value="Modify"/>
+          <s:enumeration value="Unenroll"/>
+          <s:enumeration value="Unregister"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="WalletRequest">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="Action" type="s1:WalletActionEnum"/>
+          <s:element maxOccurs="1" minOccurs="0" name="NickName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="WalletID" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Vehicle" type="s2:PaymentVehicleInformation"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Payor" type="s1:PayorInformation"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentAccountToken" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ClientReferenceNumber" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="WalletActionEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="None"/>
+          <s:enumeration value="AddToken"/>
+          <s:enumeration value="ModifyToken"/>
+          <s:enumeration value="DeleteToken"/>
+          <s:enumeration value="DeleteWallet"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PPIWalletResponse">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultText" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="TransactionTime" type="s:dateTime"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentAccountToken" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Success" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPIGetWalletResponse">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultCode" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ResultText" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Wallet" type="s1:Wallet"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Success" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Wallet">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="WalletID" type="s:string"/>
+          <s:element maxOccurs="unbounded" minOccurs="0" name="PaymentAccount" type="s4:PaymentAccountTokenInformation"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PPIWalletPayment">
+        <s:complexContent mixed="false">
+          <s:extension base="s1:PPIPaymentBase">
+            <s:sequence>
+              <s:element maxOccurs="1" minOccurs="0" name="WalletID" type="s:string"/>
+              <s:element maxOccurs="1" minOccurs="0" name="PaymentAccountToken" type="s:string"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.ePayments.com/PPIPayment">
+      <s:import namespace="http://tempuri.org/TransactionData.xsd"/>
+      <s:import namespace="http://www.ePayments.com/PPI"/>
+      <s:complexType name="FeeEntry">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="FeeType" type="s2:FeeSegmentType"/>
+          <s:element maxOccurs="1" minOccurs="1" name="Amount" type="s:decimal"/>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="FeeSegmentType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Customer"/>
+          <s:enumeration value="Client"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="PaymentCategory">
+        <s:restriction base="s:string">
+          <s:enumeration value="None"/>
+          <s:enumeration value="CreditCard"/>
+          <s:enumeration value="DebitCard"/>
+          <s:enumeration value="Check"/>
+          <s:enumeration value="Ach"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="InvoiceDataEntry">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="Amount" type="s:decimal"/>
+          <s:element maxOccurs="1" minOccurs="0" name="InvoiceNumber" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PaymentSegments">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="1" name="Amount" type="s:decimal"/>
+          <s:element maxOccurs="1" minOccurs="0" name="SegmentType" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PaymentVehicleInformation">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="AbaNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="AccountType" type="s3:AccountTypeEnum"/>
+          <s:element maxOccurs="1" minOccurs="0" name="CheckNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="CheckType" type="s1:PaymentVehicleInformationCheckType"/>
+          <s:element maxOccurs="1" minOccurs="1" name="CheckNumberPosition" type="s3:CheckNumberPositionEnum"/>
+          <s:element maxOccurs="1" minOccurs="0" name="CVV2Code" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ExpirationDate" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentVehicleNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="1" name="PaymentMethodCategory" type="s2:PaymentCategory"/>
+          <s:element maxOccurs="1" minOccurs="1" name="EnforcePinDebitValidation" type="s:boolean"/>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="PPIReasonCategoryEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="Void"/>
+          <s:enumeration value="Refund"/>
+          <s:enumeration value="ChargeBack"/>
+          <s:enumeration value="Return"/>
+          <s:enumeration value="ReturnACH"/>
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/TransactionData.xsd">
+      <s:import namespace="http://www.ePayments.com/PPI"/>
+      <s:simpleType name="CustomFieldEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="None"/>
+          <s:enumeration value="CustomData1"/>
+          <s:enumeration value="CustomData2"/>
+          <s:enumeration value="CustomData3"/>
+          <s:enumeration value="CustomData4"/>
+          <s:enumeration value="CustomData5"/>
+          <s:enumeration value="CustomData6"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="AccountTypeEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="None"/>
+          <s:enumeration value="Savings"/>
+          <s:enumeration value="Checking"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="CheckNumberPositionEnum">
+        <s:restriction base="s:string">
+          <s:enumeration value="None"/>
+          <s:enumeration value="Right"/>
+          <s:enumeration value="Center"/>
+          <s:enumeration value="Left"/>
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PPIFinalizeResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="s1:PPIResponse">
+            <s:sequence>
+              <s:element maxOccurs="1" minOccurs="1" name="NewTotalAmount" type="s:double"/>
+              <s:element maxOccurs="1" minOccurs="1" name="NewFeeAmount" type="s:double"/>
+              <s:element maxOccurs="1" minOccurs="1" name="PaymentReAuthorized" type="s:boolean"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="PPIValidateCustomerResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="s1:PPIResponse">
+            <s:sequence>
+              <s:element maxOccurs="1" minOccurs="1" name="MinimumAmount" type="s:double"/>
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://www.ePayments.com/PPI"/>
+      <s:import namespace="http://www.ePayments.com/PPIPayment"/>
+      <s:complexType name="PaymentAccountTokenInformation">
+        <s:sequence>
+          <s:element maxOccurs="1" minOccurs="0" name="PartialPaymentVehicleNumber" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="NickName" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ExpirationDate" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentAccountToken" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="Payor" type="s1:PayorInformation"/>
+          <s:element maxOccurs="1" minOccurs="1" name="PaymentMethodCategory" type="s2:PaymentCategory"/>
+          <s:element maxOccurs="1" minOccurs="0" name="PaymentMethod" type="s:string"/>
+          <s:element maxOccurs="1" minOccurs="0" name="ClientReferenceNumber" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SubmitPPIRecurringPaymentSoapIn">
+    <wsdl:part element="tns:SubmitPPIRecurringPayment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitPPIRecurringPaymentSoapOut">
+    <wsdl:part element="tns:SubmitPPIRecurringPaymentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetPPIPaymentTypeSegmentsSoapIn">
+    <wsdl:part element="tns:GetPPIPaymentTypeSegments" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetPPIPaymentTypeSegmentsSoapOut">
+    <wsdl:part element="tns:GetPPIPaymentTypeSegmentsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetPPIPaymentFeeSoapIn">
+    <wsdl:part element="tns:GetPPIPaymentFee" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetPPIPaymentFeeSoapOut">
+    <wsdl:part element="tns:GetPPIPaymentFeeResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetVelocityFeeSoapIn">
+    <wsdl:part element="tns:GetVelocityFee" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetVelocityFeeSoapOut">
+    <wsdl:part element="tns:GetVelocityFeeResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitPPIPaymentSoapIn">
+    <wsdl:part element="tns:SubmitPPIPayment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitPPIPaymentSoapOut">
+    <wsdl:part element="tns:SubmitPPIPaymentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ModifyPPIPaymentSoapIn">
+    <wsdl:part element="tns:ModifyPPIPayment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ModifyPPIPaymentSoapOut">
+    <wsdl:part element="tns:ModifyPPIPaymentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="FinalizePPIPaymentSoapIn">
+    <wsdl:part element="tns:FinalizePPIPayment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="FinalizePPIPaymentSoapOut">
+    <wsdl:part element="tns:FinalizePPIPaymentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ModifyPPICustomerSoapIn">
+    <wsdl:part element="tns:ModifyPPICustomer" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ModifyPPICustomerSoapOut">
+    <wsdl:part element="tns:ModifyPPICustomerResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="VoidPPIPaymentSoapIn">
+    <wsdl:part element="tns:VoidPPIPayment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="VoidPPIPaymentSoapOut">
+    <wsdl:part element="tns:VoidPPIPaymentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RefundPPIPaymentSoapIn">
+    <wsdl:part element="tns:RefundPPIPayment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="RefundPPIPaymentSoapOut">
+    <wsdl:part element="tns:RefundPPIPaymentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CapturePaymentSoapIn">
+    <wsdl:part element="tns:CapturePayment" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CapturePaymentSoapOut">
+    <wsdl:part element="tns:CapturePaymentResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetIVRTransferOptionsSoapIn">
+    <wsdl:part element="tns:GetIVRTransferOptions" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetIVRTransferOptionsSoapOut">
+    <wsdl:part element="tns:GetIVRTransferOptionsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ValidatePPICustomerSoapIn">
+    <wsdl:part element="tns:ValidatePPICustomer" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ValidatePPICustomerSoapOut">
+    <wsdl:part element="tns:ValidatePPICustomerResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ValidateFinancialInfoSoapIn">
+    <wsdl:part element="tns:ValidateFinancialInfo" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="ValidateFinancialInfoSoapOut">
+    <wsdl:part element="tns:ValidateFinancialInfoResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetReasonCodesSoapIn">
+    <wsdl:part element="tns:GetReasonCodes" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetReasonCodesSoapOut">
+    <wsdl:part element="tns:GetReasonCodesResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitPPIReturnOrChargebackSoapIn">
+    <wsdl:part element="tns:SubmitPPIReturnOrChargeback" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitPPIReturnOrChargebackSoapOut">
+    <wsdl:part element="tns:SubmitPPIReturnOrChargebackResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitCustomerAccountSoapIn">
+    <wsdl:part element="tns:SubmitCustomerAccount" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitCustomerAccountSoapOut">
+    <wsdl:part element="tns:SubmitCustomerAccountResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitWalletInformationSoapIn">
+    <wsdl:part element="tns:SubmitWalletInformation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitWalletInformationSoapOut">
+    <wsdl:part element="tns:SubmitWalletInformationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetWalletInformationSoapIn">
+    <wsdl:part element="tns:GetWalletInformation" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetWalletInformationSoapOut">
+    <wsdl:part element="tns:GetWalletInformationResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitPPIPaymentUsingWalletSoapIn">
+    <wsdl:part element="tns:SubmitPPIPaymentUsingWallet" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="SubmitPPIPaymentUsingWalletSoapOut">
+    <wsdl:part element="tns:SubmitPPIPaymentUsingWalletResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="PPIServiceFacadeSoap">
+    <wsdl:operation name="SubmitPPIRecurringPayment">
+      <wsdl:input message="tns:SubmitPPIRecurringPaymentSoapIn"/>
+      <wsdl:output message="tns:SubmitPPIRecurringPaymentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPPIPaymentTypeSegments">
+      <wsdl:input message="tns:GetPPIPaymentTypeSegmentsSoapIn"/>
+      <wsdl:output message="tns:GetPPIPaymentTypeSegmentsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetPPIPaymentFee">
+      <wsdl:input message="tns:GetPPIPaymentFeeSoapIn"/>
+      <wsdl:output message="tns:GetPPIPaymentFeeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetVelocityFee">
+      <wsdl:input message="tns:GetVelocityFeeSoapIn"/>
+      <wsdl:output message="tns:GetVelocityFeeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIPayment">
+      <wsdl:input message="tns:SubmitPPIPaymentSoapIn"/>
+      <wsdl:output message="tns:SubmitPPIPaymentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPPIPayment">
+      <wsdl:input message="tns:ModifyPPIPaymentSoapIn"/>
+      <wsdl:output message="tns:ModifyPPIPaymentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="FinalizePPIPayment">
+      <wsdl:input message="tns:FinalizePPIPaymentSoapIn"/>
+      <wsdl:output message="tns:FinalizePPIPaymentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPPICustomer">
+      <wsdl:input message="tns:ModifyPPICustomerSoapIn"/>
+      <wsdl:output message="tns:ModifyPPICustomerSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="VoidPPIPayment">
+      <wsdl:input message="tns:VoidPPIPaymentSoapIn"/>
+      <wsdl:output message="tns:VoidPPIPaymentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="RefundPPIPayment">
+      <wsdl:input message="tns:RefundPPIPaymentSoapIn"/>
+      <wsdl:output message="tns:RefundPPIPaymentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="CapturePayment">
+      <wsdl:input message="tns:CapturePaymentSoapIn"/>
+      <wsdl:output message="tns:CapturePaymentSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetIVRTransferOptions">
+      <wsdl:input message="tns:GetIVRTransferOptionsSoapIn"/>
+      <wsdl:output message="tns:GetIVRTransferOptionsSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePPICustomer">
+      <wsdl:input message="tns:ValidatePPICustomerSoapIn"/>
+      <wsdl:output message="tns:ValidatePPICustomerSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateFinancialInfo">
+      <wsdl:input message="tns:ValidateFinancialInfoSoapIn"/>
+      <wsdl:output message="tns:ValidateFinancialInfoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetReasonCodes">
+      <wsdl:input message="tns:GetReasonCodesSoapIn"/>
+      <wsdl:output message="tns:GetReasonCodesSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIReturnOrChargeback">
+      <wsdl:input message="tns:SubmitPPIReturnOrChargebackSoapIn"/>
+      <wsdl:output message="tns:SubmitPPIReturnOrChargebackSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCustomerAccount">
+      <wsdl:input message="tns:SubmitCustomerAccountSoapIn"/>
+      <wsdl:output message="tns:SubmitCustomerAccountSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitWalletInformation">
+      <wsdl:input message="tns:SubmitWalletInformationSoapIn"/>
+      <wsdl:output message="tns:SubmitWalletInformationSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletInformation">
+      <wsdl:input message="tns:GetWalletInformationSoapIn"/>
+      <wsdl:output message="tns:GetWalletInformationSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIPaymentUsingWallet">
+      <wsdl:input message="tns:SubmitPPIPaymentUsingWalletSoapIn"/>
+      <wsdl:output message="tns:SubmitPPIPaymentUsingWalletSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PPIServiceFacadeSoap" type="tns:PPIServiceFacadeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SubmitPPIRecurringPayment">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIRecurringPayment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPPIPaymentTypeSegments">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/GetPPIPaymentTypeSegments" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPPIPaymentFee">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/GetPPIPaymentFee" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVelocityFee">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/GetVelocityFee" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIPayment">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPPIPayment">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/ModifyPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalizePPIPayment">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/FinalizePPIPayment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPPICustomer">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/ModifyPPICustomer" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoidPPIPayment">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/VoidPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundPPIPayment">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/RefundPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapturePayment">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/CapturePayment" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIVRTransferOptions">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/GetIVRTransferOptions" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePPICustomer">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/ValidatePPICustomer" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateFinancialInfo">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/ValidateFinancialInfo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReasonCodes">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/GetReasonCodes" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIReturnOrChargeback">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIReturnOrChargeback" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCustomerAccount">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/SubmitCustomerAccount" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitWalletInformation">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/SubmitWalletInformation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletInformation">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/GetWalletInformation" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIPaymentUsingWallet">
+      <soap:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIPaymentUsingWallet" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PPIServiceFacadeSoap12" type="tns:PPIServiceFacadeSoap">
+    <soap12:binding style="document" transport="http://www.w3.org/2003/05/soap/bindings/HTTP/"/>
+    <wsdl:operation name="SubmitPPIRecurringPayment">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIRecurringPayment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPPIPaymentTypeSegments">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/GetPPIPaymentTypeSegments" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPPIPaymentFee">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/GetPPIPaymentFee" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVelocityFee">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/GetVelocityFee" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIPayment">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPPIPayment">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/ModifyPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinalizePPIPayment">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/FinalizePPIPayment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyPPICustomer">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/ModifyPPICustomer" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoidPPIPayment">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/VoidPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundPPIPayment">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/RefundPPIPayment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CapturePayment">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/CapturePayment" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIVRTransferOptions">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/GetIVRTransferOptions" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidatePPICustomer">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/ValidatePPICustomer" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateFinancialInfo">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/ValidateFinancialInfo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReasonCodes">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/GetReasonCodes" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIReturnOrChargeback">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIReturnOrChargeback" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitCustomerAccount">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/SubmitCustomerAccount" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitWalletInformation">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/SubmitWalletInformation" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWalletInformation">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/GetWalletInformation" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitPPIPaymentUsingWallet">
+      <soap12:operation soapAction="https://www.velocitypayment.com/ws/SubmitPPIPaymentUsingWallet" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VGatewayWebService">
+    <wsdl:port binding="tns:PPIServiceFacadeSoap" name="PPIServiceFacadeSoap">
+      <soap:address location="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService"/>
+    </wsdl:port>
+    <wsdl:port binding="tns:PPIServiceFacadeSoap12" name="PPIServiceFacadeSoap12">
+      <soap12:address location="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint></con:endpoints></con:interface>

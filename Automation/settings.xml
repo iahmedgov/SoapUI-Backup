@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="dd91dff6-4348-4f28-a4e4-e1843f05a8cc" name="Automation" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="dd91dff6-4348-4f28-a4e4-e1843f05a8ccfileName">Automation</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

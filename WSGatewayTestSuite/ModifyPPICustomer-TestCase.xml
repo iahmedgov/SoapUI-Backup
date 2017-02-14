@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3118715b-88ff-4691-8c91-ed88be94ca2f" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ModifyPPICustomer TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3118715b-88ff-4691-8c91-ed88be94ca2ffileName">ModifyPPICustomer-TestCase</con:setting></con:settings><con:testStep type="request" id="0f893e1a-426e-4d15-86b7-8c46936175e5" name="ModifyPPICustomer"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>ModifyPPICustomer</con:operation><con:request name="ModifyPPICustomer" id="d0b9695f-5041-4861-baaf-8b6613184dd6" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:ModifyPPICustomer>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>junit</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>testing</ppi:Password>
+            <!--Optional:-->
+            <ppi:PPITransactionRequestId>sdfsdf4rw334fasfsdf</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>ab12</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token>
+         <!--Optional:-->
+         
+         <!--Optional:-->
+         <ws:customer>
+            <!--Optional:-->
+            <ppi:AddressLine1>?</ppi:AddressLine1>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+         </ws:customer>
+      </ws:ModifyPPICustomer>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/ModifyPPICustomer" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

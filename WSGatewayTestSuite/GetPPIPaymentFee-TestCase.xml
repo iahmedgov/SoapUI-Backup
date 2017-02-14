@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4db5b1f2-df29-467c-8aff-a4cb77504a4b" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetPPIPaymentFee TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4db5b1f2-df29-467c-8aff-a4cb77504a4bfileName">GetPPIPaymentFee-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="22dd5c72-154e-4102-9b86-c8493158d3be" name="GetPPIPaymentFee"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>GetPPIPaymentFee</con:operation><con:request name="GetPPIPaymentFee" id="44efaed4-aaf3-4890-9bf7-16c46d450652" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:GetPPIPaymentFee>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>user524</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>pwd524</ppi:Password><ppi:PPITransactionRequestId>11111111</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>524</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token>
+         <ws:paymentAmount>9</ws:paymentAmount>
+         <ws:method>Ach</ws:method>
+         <!--Optional:-->
+         
+      </ws:GetPPIPaymentFee>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/GetPPIPaymentFee" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

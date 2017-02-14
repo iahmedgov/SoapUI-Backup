@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="ea97ea24-b756-4b19-b686-ea7befedb4b1" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="VoidPPIPayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ea97ea24-b756-4b19-b686-ea7befedb4b1fileName">VoidPPIPayment-TestCase</con:setting></con:settings><con:testStep type="request" id="63b28553-c4cf-4eaa-9f38-ae3c51914b21" name="VoidPPIPayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>VoidPPIPayment</con:operation><con:request name="VoidPPIPayment" id="ecc66677-0a5d-4b44-8c27-938c752eb3bd" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:VoidPPIPayment>\r
+         <!--Optional:-->\r
+         <ws:token>\r
+            <!--Optional:-->\r
+            <ppi:UserName>?</ppi:UserName>\r
+            <!--Optional:-->\r
+            <ppi:Password>?</ppi:Password>\r
+            <!--Optional:-->\r
+            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>\r
+            <!--Optional:-->\r
+            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>\r
+         </ws:token>\r
+         <!--Optional:-->\r
+         <ws:paymentId>?</ws:paymentId>\r
+         <!--Optional:-->\r
+         <ws:code>?</ws:code>\r
+         <!--Optional:-->\r
+         <ws:comments>?</ws:comments>\r
+      </ws:VoidPPIPayment>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/VoidPPIPayment"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

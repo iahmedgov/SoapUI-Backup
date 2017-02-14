@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d5da1ec7-d180-469e-b621-d3fc37aed9d1" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetWalletInformation TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d5da1ec7-d180-469e-b621-d3fc37aed9d1fileName">GetWalletInformation-TestCase</con:setting></con:settings><con:testStep type="request" id="f1f2165e-2b3b-4b22-907d-d1d1749666b3" name="GetWalletInformation"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap12</con:interface><con:operation>GetWalletInformation</con:operation><con:request name="GetWalletInformation" id="11061b76-590d-4297-a3b9-65fc09bf7432" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:GetWalletInformation>\r
+         <!--Optional:-->\r
+         <ws:token>\r
+            <!--Optional:-->\r
+            <ppi:UserName>?</ppi:UserName>\r
+            <!--Optional:-->\r
+            <ppi:Password>?</ppi:Password>\r
+            <!--Optional:-->\r
+            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>\r
+            <!--Optional:-->\r
+            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>\r
+         </ws:token>\r
+         <!--Optional:-->\r
+         <ws:walletID>?</ws:walletID>\r
+      </ws:GetWalletInformation>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/GetWalletInformationRequest"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

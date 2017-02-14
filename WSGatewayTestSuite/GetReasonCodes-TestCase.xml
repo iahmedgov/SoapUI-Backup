@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="197198ce-d152-4dce-af98-a05a7695571b" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetReasonCodes TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="197198ce-d152-4dce-af98-a05a7695571bfileName">GetReasonCodes-TestCase</con:setting></con:settings><con:testStep type="request" id="cdd56021-6e88-4f96-bdee-c4b619fb475f" name="GetReasonCodes"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>GetReasonCodes</con:operation><con:request name="GetReasonCodes" id="2ea6a20d-f531-4685-81e9-b4fdb42e37a7" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ws:GetReasonCodes>\r
+         <!--Optional:-->\r
+         <ws:token>\r
+            <!--Optional:-->\r
+            <ppi:UserName>?</ppi:UserName>\r
+            <!--Optional:-->\r
+            <ppi:Password>?</ppi:Password>\r
+            <!--Optional:-->\r
+            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>\r
+            <!--Optional:-->\r
+            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>\r
+         </ws:token>\r
+         <ws:reasonCategory>?</ws:reasonCategory>\r
+      </ws:GetReasonCodes>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/GetReasonCodes"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

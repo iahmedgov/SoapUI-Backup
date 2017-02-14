@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a1660e0d-c45b-48ef-a710-4a09ec1a8bdf" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetIVRTransferOptions TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a1660e0d-c45b-48ef-a710-4a09ec1a8bdffileName">GetIVRTransferOptions-TestCase</con:setting></con:settings><con:testStep type="request" id="a9afa0ba-5c5b-4def-9497-2bdc1fce1997" name="GetIVRTransferOptions"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap12</con:interface><con:operation>GetIVRTransferOptions</con:operation><con:request name="GetIVRTransferOptions" id="574c6b8f-5ba8-40cc-bf7f-8eceec2d494d" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:GetIVRTransferOptions>\r
+         <!--Optional:-->\r
+         <ws:token>\r
+            <!--Optional:-->\r
+            <ppi:UserName>?</ppi:UserName>\r
+            <!--Optional:-->\r
+            <ppi:Password>?</ppi:Password>\r
+            <!--Optional:-->\r
+            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>\r
+            <!--Optional:-->\r
+            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>\r
+         </ws:token>\r
+         <!--Optional:-->\r
+         <ws:paymentType>?</ws:paymentType>\r
+      </ws:GetIVRTransferOptions>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/GetIVRTransferOptionsRequest"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

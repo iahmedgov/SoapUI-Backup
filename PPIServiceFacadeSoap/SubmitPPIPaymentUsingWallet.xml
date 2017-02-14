@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="5b2a5e0d-bd7f-41d3-b856-ba05dfff28b0" isOneWay="false" action="https://www.velocitypayment.com/ws/SubmitPPIPaymentUsingWallet" name="SubmitPPIPaymentUsingWallet" bindingOperationName="SubmitPPIPaymentUsingWallet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5b2a5e0d-bd7f-41d3-b856-ba05dfff28b0fileName">SubmitPPIPaymentUsingWallet</con:setting></con:settings><con:call id="0035e309-7d67-4fd0-8fad-bbb6752f83ef" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:SubmitPPIPaymentUsingWallet>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            <ppi:UserName>?</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>?</ppi:Password>
+            <!--Optional:-->
+            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>
+            <!--Optional:-->
+            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token>
+         <!--Optional:-->
+         <ws:ppiWalletPayment Notes="?">
+            <!--Optional:-->
+            <ppi:AdditionalInfo>
+               <!--Zero or more repetitions:-->
+               <ppi:Fees>
+                  <ppip:FeeType>?</ppip:FeeType>
+                  <ppip:Amount>?</ppip:Amount>
+               </ppi:Fees>
+               <!--Zero or more repetitions:-->
+               <ppi:InvoiceData>
+                  <ppip:Amount>?</ppip:Amount>
+                  <!--Optional:-->
+                  <ppip:InvoiceNumber>?</ppip:InvoiceNumber>
+               </ppi:InvoiceData>
+               <!--Zero or more repetitions:-->
+               <ppi:PaymentSegment>
+                  <ppip:Amount>?</ppip:Amount>
+                  <!--Optional:-->
+                  <ppip:SegmentType>?</ppip:SegmentType>
+               </ppi:PaymentSegment>
+               <!--Optional:-->
+               <ppi:PaymentType>?</ppi:PaymentType>
+               <ppi:ProcessDate>?</ppi:ProcessDate>
+               <!--Zero or more repetitions:-->
+               <ppi:CustomData>
+                  <ppi:ID>?</ppi:ID>
+                  <!--Optional:-->
+                  <ppi:Value>?</ppi:Value>
+               </ppi:CustomData>
+            </ppi:AdditionalInfo>
+            <!--Optional:-->
+            <ppi:Customer>
+               <!--Optional:-->
+               <ppi:AddressLine1>?</ppi:AddressLine1>
+               <!--Optional:-->
+               <ppi:AddressLine2>?</ppi:AddressLine2>
+               <!--Optional:-->
+               <ppi:Country>?</ppi:Country>
+               <!--Optional:-->
+               <ppi:EmailAddress>?</ppi:EmailAddress>
+               <!--Optional:-->
+               <ppi:FirstName>?</ppi:FirstName>
+               <!--Optional:-->
+               <ppi:LastName>?</ppi:LastName>
+               <!--Optional:-->
+               <ppi:MiddleInitial>?</ppi:MiddleInitial>
+               <!--Optional:-->
+               <ppi:Notes>?</ppi:Notes>
+               <!--Optional:-->
+               <ppi:PhoneNumber>?</ppi:PhoneNumber>
+               <!--Optional:-->
+               <ppi:Zip>?</ppi:Zip>
+               <!--Optional:-->
+               <ppi:Username>?</ppi:Username>
+               <!--Optional:-->
+               <ppi:Password>?</ppi:Password>
+            </ppi:Customer>
+            <!--Optional:-->
+            <ppi:ClientAccountNumber>?</ppi:ClientAccountNumber>
+            <ppi:PreAuthorizeOnly>?</ppi:PreAuthorizeOnly>
+            <ppi:PaymentSource>?</ppi:PaymentSource>
+            <!--Optional:-->
+            <ppi:WalletID>?</ppi:WalletID>
+            <!--Optional:-->
+            <ppi:PaymentAccountToken>?</ppi:PaymentAccountToken>
+         </ws:ppiWalletPayment>
+      </ws:SubmitPPIPaymentUsingWallet>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitPPIPaymentUsingWallet"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

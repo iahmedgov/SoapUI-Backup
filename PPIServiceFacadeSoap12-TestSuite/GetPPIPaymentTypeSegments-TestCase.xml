@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="fbea2111-ae78-4574-bfb5-c2663f8ec952" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetPPIPaymentTypeSegments TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="fbea2111-ae78-4574-bfb5-c2663f8ec952fileName">GetPPIPaymentTypeSegments-TestCase</con:setting></con:settings><con:testStep type="request" id="532bd003-f3ee-49a4-8434-b8704bd1f583" name="GetPPIPaymentTypeSegments"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap12</con:interface><con:operation>GetPPIPaymentTypeSegments</con:operation><con:request name="GetPPIPaymentTypeSegments" id="6c599d3d-fe53-444b-a68e-99617ca9fed8" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:GetPPIPaymentTypeSegments>\r
+         <!--Optional:-->\r
+         <ws:token>\r
+            <!--Optional:-->\r
+            <ppi:UserName>?</ppi:UserName>\r
+            <!--Optional:-->\r
+            <ppi:Password>?</ppi:Password>\r
+            <!--Optional:-->\r
+            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>\r
+            <!--Optional:-->\r
+            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>\r
+         </ws:token>\r
+      </ws:GetPPIPaymentTypeSegments>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/GetPPIPaymentTypeSegmentsRequest"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

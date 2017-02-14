@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="0c0e686e-d9d4-46f8-8f85-2dad65df66a1" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SubmitWalletAutomation" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0c0e686e-d9d4-46f8-8f85-2dad65df66a1fileName">SubmitWalletAutomation</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="f108fb00-dbda-4164-bdbd-da0daa124eae" name="AddToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="AddToken" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8069539d-f842-40ba-aa58-e15e3455ca98" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:SubmitWalletInformation>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            <ppi:UserName>junit</ppi:UserName><ppi:Password>testing</ppi:Password><ppi:PPITransactionRequestId>sdfsdf345rgsdfgsdfs</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>ab12</ppi:PPIBusinessEntityIdentifierToken>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+         </ws:token>
+         <!--Optional:-->
+         <ws:walletRequest>
+            <ppi:Action>AddToken</ppi:Action>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:WalletID>180WalletID611</ppi:WalletID><ppi:Vehicle>
+               <!--Optional:-->
+               
+               <ppip:AccountType/>
+               <!--Optional:-->
+               
+               <ppip:CheckType/>
+               <ppip:CheckNumberPosition/>
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <ppip:CVV2Code>147</ppip:CVV2Code><ppip:ExpirationDate>12/17</ppip:ExpirationDate><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory>
+               <ppip:EnforcePinDebitValidation/>
+            </ppi:Vehicle>
+            <!--Optional:-->
+            <ppi:Payor>
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:PhoneNumber>5478589632</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>22201</ppi:ZipCode><ppi:IsBusinessName/>
+            </ppi:Payor>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+         </ws:walletRequest>
+      </ws:SubmitWalletInformation>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8d414cc5-3acb-4cb0-aae9-9cc6539e8d58" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitWalletInformation"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="transfer" name="PropertyTransfer 1" id="fd9bc015-d24e-406a-aa95-82805d76657a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" transferToAll="false" entitize="false" ignoreEmpty="false" transferChildNodes="false"><con:name>ns0:PaymentAccountToken</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>AddToken</con:sourceStep><con:sourcePath>declare namespace ns0='http://www.ePayments.com/PPI';
+declare namespace ns1='https://www.velocitypayment.com/ws';
+//ns1:SubmitWalletInformationResponse[1]/ns1:SubmitWalletInformationResult[1]/ns0:PaymentAccountToken[1]</con:sourcePath><con:targetType>ns0:PaymentAccountToken</con:targetType><con:targetStep>RetPayACToken</con:targetStep><con:targetPath/><con:type>XPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="request" name="DeleteToken" id="26cb60f5-428b-458a-bb5a-7a98ae6fc869"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="DeleteToken" id="d210a33b-3498-4c58-95c1-b163671aff13"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:SubmitWalletInformation><ws:token><ppi:UserName xmlns:ppi="http://www.ePayments.com/PPI">junit</ppi:UserName><ppi:Password xmlns:ppi="http://www.ePayments.com/PPI">testing</ppi:Password><ppi:PPITransactionRequestId xmlns:ppi="http://www.ePayments.com/PPI">fsdf4rsdfsdfsdf</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken xmlns:ppi="http://www.ePayments.com/PPI">ab12</ppi:PPIBusinessEntityIdentifierToken></ws:token><ws:walletRequest><ppi:Action xmlns:ppi="http://www.ePayments.com/PPI">DeleteWallet</ppi:Action><ppi:WalletID xmlns:ppi="http://www.ePayments.com/PPI">180WalletID610</ppi:WalletID><ppi:Vehicle xmlns:ppi="http://www.ePayments.com/PPI"><ppip:AccountType xmlns:ppip="http://www.ePayments.com/PPIPayment"/><ppip:CheckType xmlns:ppip="http://www.ePayments.com/PPIPayment"/><ppip:CheckNumberPosition xmlns:ppip="http://www.ePayments.com/PPIPayment"/><ppip:CVV2Code xmlns:ppip="http://www.ePayments.com/PPIPayment">147</ppip:CVV2Code><ppip:ExpirationDate xmlns:ppip="http://www.ePayments.com/PPIPayment">12/17</ppip:ExpirationDate><ppip:PaymentVehicleNumber xmlns:ppip="http://www.ePayments.com/PPIPayment">4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory xmlns:ppip="http://www.ePayments.com/PPIPayment">CreditCard</ppip:PaymentMethodCategory><ppip:EnforcePinDebitValidation xmlns:ppip="http://www.ePayments.com/PPIPayment"/></ppi:Vehicle><ppi:Payor xmlns:ppi="http://www.ePayments.com/PPI"><ppi:AddressLine1>asdfasdsd</ppi:AddressLine1><ppi:PhoneNumber>4444444444</ppi:PhoneNumber><ppi:FirstName>dfsdf</ppi:FirstName><ppi:LastName>sdfsdf</ppi:LastName><ppi:ZipCode>22201</ppi:ZipCode><ppi:IsBusinessName/></ppi:Payor><ppi:PaymentAccountToken xmlns:ppi="http://www.ePayments.com/PPI">${RetPayACToken#ns0:PaymentAccountToken}</ppi:PaymentAccountToken></ws:walletRequest></ws:SubmitWalletInformation>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ca669ac1-7727-407b-9b42-2ba44a93c9d0"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="properties" name="RetPayACToken" id="bda407a2-446d-4d7a-83ca-79aceb7bf944"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>ns0:PaymentAccountToken</con:name><con:value>572711111</con:value></con:property></con:properties></con:config></con:testStep><con:properties><con:property><con:name>RetrievedPaymentAccountToken</con:name></con:property></con:properties><con:reportParameters/></con:testCase>

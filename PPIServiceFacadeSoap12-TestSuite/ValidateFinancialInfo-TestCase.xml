@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="a69b2f70-a814-408b-aaae-a06ab279e4a0" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ValidateFinancialInfo TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a69b2f70-a814-408b-aaae-a06ab279e4a0fileName">ValidateFinancialInfo-TestCase</con:setting></con:settings><con:testStep type="request" id="aeea98fc-8740-4801-9bea-6f78c820290b" name="ValidateFinancialInfo"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap12</con:interface><con:operation>ValidateFinancialInfo</con:operation><con:request name="ValidateFinancialInfo" id="179c63e8-7342-499f-979e-b057f5015ccf" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ws:ValidateFinancialInfo>\r
+         <!--Optional:-->\r
+         <ws:token>\r
+            <!--Optional:-->\r
+            <ppi:UserName>?</ppi:UserName>\r
+            <!--Optional:-->\r
+            <ppi:Password>?</ppi:Password>\r
+            <!--Optional:-->\r
+            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>\r
+            <!--Optional:-->\r
+            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>\r
+         </ws:token>\r
+         <ws:financialType>?</ws:financialType>\r
+         <!--Optional:-->\r
+         <ws:input>?</ws:input>\r
+      </ws:ValidateFinancialInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/ValidateFinancialInfoRequest"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

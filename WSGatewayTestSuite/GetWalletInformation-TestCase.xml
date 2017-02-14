@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="3c2d86f0-5d45-4337-9f7e-2c93a37db927" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetWalletInformation TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3c2d86f0-5d45-4337-9f7e-2c93a37db927fileName">GetWalletInformation-TestCase</con:setting></con:settings><con:testStep type="request" id="5e62ba78-5031-4707-9e12-75847b730606" name="GetWalletInformation"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>GetWalletInformation</con:operation><con:request name="GetWalletInformation" id="cdcc25cd-fdae-4a67-bf4e-33fa0fd317c6" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:GetWalletInformation>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>de_temptags</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>p@ssword829</ppi:Password>
+            <!--Optional:-->
+            <ppi:PPITransactionRequestId>fdf4rdfsdfdsf</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>3131</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token><ws:walletID>20161020124048</ws:walletID>
+         <!--Optional:-->
+         
+      </ws:GetWalletInformation>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/GetWalletInformation" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

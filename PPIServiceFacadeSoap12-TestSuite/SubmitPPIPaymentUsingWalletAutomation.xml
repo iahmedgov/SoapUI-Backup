@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="8dea057d-825e-4edb-bcab-df3d89238dee" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="SubmitPPIPaymentUsingWalletAutomation" searchProperties="true" maxResults="0" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="8dea057d-825e-4edb-bcab-df3d89238deefileName">SubmitPPIPaymentUsingWalletAutomation</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="datasource" name="DataSourcePaymentUsingWallet" id="c3806e02-1247-43b5-b48e-ab67d8953f69"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>C:/SoapData/PaymentUsingWallet.xlsx</file><worksheet>PaymentUsingWallet</worksheet><cell>A2</cell><ignoreEmpty>true</ignoreEmpty></con:configuration></con:dataSource><con:property>TestNotes</con:property><con:property>AT_Username</con:property><con:property>AT_Password</con:property><con:property>AT_RequestID</con:property><con:property>AT_Identifier</con:property><con:property>Notes</con:property><con:property>FeeType</con:property><con:property>FeeAmount</con:property><con:property>SegmentAmount</con:property><con:property>SegmentType</con:property><con:property>PaymentType</con:property><con:property>ProcessDate</con:property><con:property>C_AL1</con:property><con:property>C_AL2</con:property><con:property>C_Country</con:property><con:property>C_Email</con:property><con:property>C_FirstName</con:property><con:property>C_LastName</con:property><con:property>C_MI</con:property><con:property>C_Notest</con:property><con:property>C_Phone</con:property><con:property>C_ZIP</con:property><con:property>C_Username</con:property><con:property>C_Password</con:property><con:property>C_CAN</con:property><con:property>C_PreAuthOnly</con:property><con:property>C_PaymentSource</con:property><con:property>WalletID</con:property><con:property>PaymentAcToken</con:property><con:property>ResultCode</con:property><con:property>ResultText</con:property><con:property>Success</con:property><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="datagen" name="DataGenProcessDate" id="b5c17793-c2cf-43ca-b800-59db0d2169c6"><con:settings/><con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:property type="Script"><con:configuration><script>def sdf = new java.text.SimpleDateFormat("yyyy-MM-dd")
+return sdf.format(new Date()) + "T08:59:00.000-04:00"</script></con:configuration><con:name>ProcessDateToday</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property></con:config></con:testStep><con:testStep type="request" id="f590dec2-2202-4202-80cb-08de99b9301e" name="SubmitPPIPaymentUsingWallet"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitPPIPaymentUsingWallet</con:operation><con:request name="SubmitPPIPaymentUsingWallet" id="5ea1ab63-dae7-443b-a34f-b570404595cb" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:SubmitPPIPaymentUsingWallet>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>${DataSourcePaymentUsingWallet#AT_Username}</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>${DataSourcePaymentUsingWallet#AT_Password}</ppi:Password>
+            <!--Optional:-->
+            <ppi:PPITransactionRequestId>${DataSourcePaymentUsingWallet#AT_RequestID}</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>${DataSourcePaymentUsingWallet#AT_Identifier}</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token>
+         <!--Optional:-->
+         <ws:ppiWalletPayment Notes="${DataSourcePaymentUsingWallet#Notes}">
+            <!--Optional:-->
+            <ppi:AdditionalInfo>
+               <!--Zero or more repetitions:-->
+               <ppi:Fees>
+                  <ppip:FeeType>${DataSourcePaymentUsingWallet#FeeType}</ppip:FeeType>
+                  <ppip:Amount>${DataSourcePaymentUsingWallet#FeeAmount}</ppip:Amount>
+               </ppi:Fees>
+               <!--Zero or more repetitions:-->
+               
+               <!--Zero or more repetitions:-->
+               <ppi:PaymentSegment>
+                  <ppip:Amount>${DataSourcePaymentUsingWallet#SegmentAmount}</ppip:Amount><ppip:SegmentType>${DataSourcePaymentUsingWallet#SegmentType}</ppip:SegmentType>
+                  <!--Optional:-->
+                  
+               </ppi:PaymentSegment>
+               <!--Optional:-->
+               
+               <ppi:PaymentType>${DataSourcePaymentUsingWallet#PaymentType}</ppi:PaymentType><ppi:ProcessDate>${DataGenProcessDate#ProcessDateToday}</ppi:ProcessDate>
+               <!--Zero or more repetitions:-->
+               
+            </ppi:AdditionalInfo>
+            <!--Optional:-->
+            <ppi:Customer>
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               <ppi:AddressLine1>${DataSourcePaymentUsingWallet#C_AL1}</ppi:AddressLine1>
+               <!--Optional:-->
+               <ppi:AddressLine2>${DataSourcePaymentUsingWallet#C_AL2}</ppi:AddressLine2>
+               <!--Optional:-->
+               <ppi:Country>${DataSourcePaymentUsingWallet#C_Country}</ppi:Country>
+               <!--Optional:-->
+               <ppi:EmailAddress>${DataSourcePaymentUsingWallet#C_Email}</ppi:EmailAddress>
+               <!--Optional:-->
+               <ppi:FirstName>${DataSourcePaymentUsingWallet#C_FirstName}</ppi:FirstName>
+               <!--Optional:-->
+               <ppi:LastName>${DataSourcePaymentUsingWallet#C_LastName}</ppi:LastName>
+               <!--Optional:-->
+               <ppi:MiddleInitial>${DataSourcePaymentUsingWallet#C_MI}</ppi:MiddleInitial>
+               <!--Optional:-->
+               <ppi:Notes>${DataSourcePaymentUsingWallet#C_Notest}</ppi:Notes>
+               <!--Optional:-->
+               <ppi:PhoneNumber>${DataSourcePaymentUsingWallet#C_Phone}</ppi:PhoneNumber>
+               <!--Optional:-->
+               <ppi:Zip>${DataSourcePaymentUsingWallet#C_ZIP}</ppi:Zip>
+               <!--Optional:-->
+               <ppi:Username>${DataSourcePaymentUsingWallet#C_Username}</ppi:Username><ppi:Password>${DataSourcePaymentUsingWallet#C_Password}</ppi:Password>
+            </ppi:Customer>
+            <!--Optional:-->
+            
+            <ppi:PreAuthorizeOnly>${DataSourcePaymentUsingWallet#C_PreAuthOnly}</ppi:PreAuthorizeOnly>
+            <ppi:ClientAccountNumber>${DataSourcePaymentUsingWallet#C_CAN}</ppi:ClientAccountNumber><ppi:PaymentSource>${DataSourcePaymentUsingWallet#C_PaymentSource}</ppi:PaymentSource><ppi:WalletID>${DataSourcePaymentUsingWallet#WalletID}</ppi:WalletID><ppi:PaymentAccountToken>${DataSourcePaymentUsingWallet#PaymentAcToken}</ppi:PaymentAccountToken>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+         </ws:ppiWalletPayment>
+      </ws:SubmitPPIPaymentUsingWallet>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="XPath Match" id="c5a9541f-7ba4-4518-bea1-cec6e4d3ea61" name="Match content of [ns0:ResultCode]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+declare namespace ns1='https://www.velocitypayment.com/ws';
+//ns1:SubmitPPIPaymentUsingWalletResponse[1]/ns1:SubmitPPIPaymentUsingWalletResult[1]/ns0:ResultCode[1]/text()</path><content>${DataSourcePaymentUsingWallet#ResultCode}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="c7815b00-8370-41dd-872c-45a659605ff4" name="Match content of [ns0:ResultText]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+declare namespace ns1='https://www.velocitypayment.com/ws';
+//ns1:SubmitPPIPaymentUsingWalletResponse[1]/ns1:SubmitPPIPaymentUsingWalletResult[1]/ns0:ResultText[1]/text()</path><content>${DataSourcePaymentUsingWallet#ResultText}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="5b4665d5-7d4d-4190-8ffe-324b07695e55" name="Match content of [ns0:Success]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+declare namespace ns1='https://www.velocitypayment.com/ws';
+//ns1:SubmitPPIPaymentUsingWalletResponse[1]/ns1:SubmitPPIPaymentUsingWalletResult[1]/ns0:Success[1]/text()</path><content>${DataSourcePaymentUsingWallet#Success}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitPPIPaymentUsingWallet" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="2d16df19-1c6a-4bb6-adb5-6b3232835336"><con:settings/><con:config><dataSourceStep>DataSourcePaymentUsingWallet</dataSourceStep><targetStep>DataGenProcessDate</targetStep></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>270c89cf-46ff-4ec3-8a61-5ad2bc1212ff</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>
