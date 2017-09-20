@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="9c971b5f-6e4f-4c20-86a6-3ba44dfc9e38" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="BillLookup" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9c971b5f-6e4f-4c20-86a6-3ba44dfc9e38fileName">BillLookup</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="Request 1" id="509fc1fe-e453-41f2-9876-26ef4225d40c"><con:settings/><con:config service="https://qa.velocitypayment.com" resourcePath="/vtps/rest/billLookup" methodName="BillLookup" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="41fcb8c3-f5ac-4b0f-9c99-7a95125d2b10" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://qa.velocitypayment.com</con:endpoint><con:request>{
+   "applicationID": "61",
+   "customerID": "6",
+   "lookup_field_1": "123466",
+   "lookup_field_2": "33333",
+   "lookup_field_3": ""
+}</con:request><con:originalUri>https://qa.velocitypayment.com/vtps/rest/billLookup</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

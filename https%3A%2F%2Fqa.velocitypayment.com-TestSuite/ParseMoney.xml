@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="12753aa5-7455-4cef-9263-c13cf31b7aff" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ParseMoney" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="12753aa5-7455-4cef-9263-c13cf31b7afffileName">ParseMoney</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST Request" id="315fcc65-252f-4268-8bef-2fb8764ff010"><con:settings/><con:config service="https://qa.velocitypayment.com" methodName="Method 1" resourcePath="/vtps/rest/parseMoney" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="c2988f56-a833-433d-a015-27acab143334" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com</con:endpoint><con:request>{
+  "language": "en_US",
+  "amount": "10.00",
+  "prompt": "imtiaz",
+  "results_page": "",
+  "audio_path": "/velocity/"
+}
+</con:request><con:originalUri>https://qa.velocitypayment.com/vtps/rest/parseMoney</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters><entry key="" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

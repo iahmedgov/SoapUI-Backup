@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="parseMoney" path="/vtps/rest/parseMoney" id="0e3fa1f6-f8c1-4279-ab81-81045331a747" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0e3fa1f6-f8c1-4279-ab81-81045331a747fileName">parseMoney</con:setting></con:settings><con:parameters/><con:method name="Method 1" id="d7244581-d618-4318-9dd1-2de0b222176c" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:par="https://qa.velocitypayment.com/vtps/rest/parseMoney">par:Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="2b7035e2-ecf0-45cf-850f-2a7564e58052" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://qa.velocitypayment.com</con:endpoint><con:request>{
+  "language": "eng",
+  "amount": "10.00",
+  "prompt": "",
+  "results_page": "",
+  "audio_path": ""
+}
+</con:request><con:originalUri>https://qa.velocitypayment.com/vtps/rest/parseMoney</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource>
