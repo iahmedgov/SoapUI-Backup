@@ -17,7 +17,7 @@
          <!--Optional:-->
          <ws:ppiWalletPayment Notes="">
             <!--Optional:-->
-            <ppi:Customer><ppi:AddressLine2>2016-10-21T08:00:00.000-04:00</ppi:AddressLine2><ppi:Zip>22201</ppi:Zip></ppi:Customer><ppi:AdditionalInfo>
+            <ppi:Customer><ppi:AddressLine1>11 street</ppi:AddressLine1><ppi:Country>US</ppi:Country><ppi:Zip>22201</ppi:Zip></ppi:Customer><ppi:AdditionalInfo>
                <!--Zero or more repetitions:-->
                <ppi:Fees>
                   <ppip:FeeType>Customer</ppip:FeeType>
@@ -27,7 +27,7 @@
                
                <!--Zero or more repetitions:-->
                <ppi:PaymentSegment>
-                  <ppip:Amount>1</ppip:Amount><ppip:SegmentType>Regular</ppip:SegmentType>
+                  <ppip:Amount>1.00</ppip:Amount><ppip:SegmentType>Regular</ppip:SegmentType>
                   <!--Optional:-->
 
 
@@ -39,7 +39,7 @@
                </ppi:PaymentSegment>
                <!--Optional:-->
                
-               <ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2016-10-21T00:00:00-04:00</ppi:ProcessDate>
+               <ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2017-08-08T17:06:000-04:00</ppi:ProcessDate><ppi:CustomData><ppi:ID>CustomData1</ppi:ID><ppi:Value>hello</ppi:Value></ppi:CustomData>
                <!--Zero or more repetitions:-->
                
             </ppi:AdditionalInfo>
@@ -47,8 +47,8 @@
             
             <!--Optional:-->
             
-            <ppi:PreAuthorizeOnly/>
-            <ppi:ClientAccountNumber>asw123</ppi:ClientAccountNumber><ppi:PaymentSource/><ppi:WalletID>20161020124048</ppi:WalletID><ppi:PaymentAccountToken>880516789</ppi:PaymentAccountToken>
+            <ppi:PreAuthorizeOnly>false</ppi:PreAuthorizeOnly>
+            <ppi:ClientAccountNumber>asw123100</ppi:ClientAccountNumber><ppi:PaymentSource>Agent</ppi:PaymentSource><ppi:WalletID>3131WalletID201</ppi:WalletID><ppi:PaymentAccountToken>1301252222</ppi:PaymentAccountToken>
             <!--Optional:-->
             
             <!--Optional:-->
@@ -170,7 +170,7 @@
                </ppi:PaymentSegment>
                <!--Optional:-->
                
-               <ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2017-01-05T13:59:00.000Z</ppi:ProcessDate>
+               <ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2017-08-08T13:59:00.000Z</ppi:ProcessDate>
                <!--Zero or more repetitions:-->
                <ppi:CustomData>
                   <ppi:ID>CustomData1</ppi:ID><ppi:Value>some</ppi:Value>
