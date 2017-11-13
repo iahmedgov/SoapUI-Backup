@@ -1,134 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="012f4ac8-3e69-4be5-8d22-291e3111dfc5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RefundPPIPayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="012f4ac8-3e69-4be5-8d22-291e3111dfc5fileName">RefundPPIPayment-TestCase</con:setting></con:settings><con:testStep type="request" id="ab5a620c-ef9d-4f7b-8120-20fa2e17ca3d" name="RefundPPIPayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>RefundPPIPayment</con:operation><con:request name="RefundPPIPayment" id="8b40194f-c509-4dec-8ea0-ba5bc3afbad0" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <ws:RefundPPIPayment>\r
-         <!--Optional:-->\r
-         <ws:token>\r
-            <!--Optional:-->\r
-            <ppi:UserName>?</ppi:UserName>\r
-            <!--Optional:-->\r
-            <ppi:Password>?</ppi:Password>\r
-            <!--Optional:-->\r
-            <ppi:PPITransactionRequestId>?</ppi:PPITransactionRequestId>\r
-            <!--Optional:-->\r
-            <ppi:PPIBusinessEntityIdentifierToken>?</ppi:PPIBusinessEntityIdentifierToken>\r
-         </ws:token>\r
-         <!--Optional:-->\r
-         <ws:paymentId>?</ws:paymentId>\r
-         <!--Optional:-->\r
-         <ws:code>?</ws:code>\r
-         <!--Optional:-->\r
-         <ws:comments>?</ws:comments>\r
-         <ws:isRefundMemo>?</ws:isRefundMemo>\r
-         <ws:isDiffpaymentAccount>?</ws:isDiffpaymentAccount>\r
-         <!--Optional:-->\r
-         <ws:ppiPayment Notes="?">\r
-            <!--Optional:-->\r
-            <ppi:AdditionalInfo>\r
-               <!--Zero or more repetitions:-->\r
-               <ppi:Fees>\r
-                  <ppip:FeeType>?</ppip:FeeType>\r
-                  <ppip:Amount>?</ppip:Amount>\r
-               </ppi:Fees>\r
-               <!--Zero or more repetitions:-->\r
-               <ppi:InvoiceData>\r
-                  <ppip:Amount>?</ppip:Amount>\r
-                  <!--Optional:-->\r
-                  <ppip:InvoiceNumber>?</ppip:InvoiceNumber>\r
-               </ppi:InvoiceData>\r
-               <!--Zero or more repetitions:-->\r
-               <ppi:PaymentSegment>\r
-                  <ppip:Amount>?</ppip:Amount>\r
-                  <!--Optional:-->\r
-                  <ppip:SegmentType>?</ppip:SegmentType>\r
-               </ppi:PaymentSegment>\r
-               <!--Optional:-->\r
-               <ppi:PaymentType>?</ppi:PaymentType>\r
-               <ppi:ProcessDate>?</ppi:ProcessDate>\r
-               <!--Zero or more repetitions:-->\r
-               <ppi:CustomData>\r
-                  <ppi:ID>?</ppi:ID>\r
-                  <!--Optional:-->\r
-                  <ppi:Value>?</ppi:Value>\r
-               </ppi:CustomData>\r
-            </ppi:AdditionalInfo>\r
-            <!--Optional:-->\r
-            <ppi:Customer>\r
-               <!--Optional:-->\r
-               <ppi:AddressLine1>?</ppi:AddressLine1>\r
-               <!--Optional:-->\r
-               <ppi:AddressLine2>?</ppi:AddressLine2>\r
-               <!--Optional:-->\r
-               <ppi:Country>?</ppi:Country>\r
-               <!--Optional:-->\r
-               <ppi:EmailAddress>?</ppi:EmailAddress>\r
-               <!--Optional:-->\r
-               <ppi:FirstName>?</ppi:FirstName>\r
-               <!--Optional:-->\r
-               <ppi:LastName>?</ppi:LastName>\r
-               <!--Optional:-->\r
-               <ppi:MiddleInitial>?</ppi:MiddleInitial>\r
-               <!--Optional:-->\r
-               <ppi:Notes>?</ppi:Notes>\r
-               <!--Optional:-->\r
-               <ppi:PhoneNumber>?</ppi:PhoneNumber>\r
-               <!--Optional:-->\r
-               <ppi:Zip>?</ppi:Zip>\r
-               <!--Optional:-->\r
-               <ppi:Username>?</ppi:Username>\r
-               <!--Optional:-->\r
-               <ppi:Password>?</ppi:Password>\r
-            </ppi:Customer>\r
-            <!--Optional:-->\r
-            <ppi:ClientAccountNumber>?</ppi:ClientAccountNumber>\r
-            <ppi:PreAuthorizeOnly>?</ppi:PreAuthorizeOnly>\r
-            <ppi:PaymentSource>?</ppi:PaymentSource>\r
-            <!--Optional:-->\r
-            <ppi:Payor>\r
-               <!--Optional:-->\r
-               <ppi:AccountName>?</ppi:AccountName>\r
-               <!--Optional:-->\r
-               <ppi:AddressLine1>?</ppi:AddressLine1>\r
-               <!--Optional:-->\r
-               <ppi:AddressLine2>?</ppi:AddressLine2>\r
-               <!--Optional:-->\r
-               <ppi:Country>?</ppi:Country>\r
-               <!--Optional:-->\r
-               <ppi:PhoneNumber>?</ppi:PhoneNumber>\r
-               <!--Optional:-->\r
-               <ppi:FirstName>?</ppi:FirstName>\r
-               <!--Optional:-->\r
-               <ppi:LastName>?</ppi:LastName>\r
-               <!--Optional:-->\r
-               <ppi:MiddleInitial>?</ppi:MiddleInitial>\r
-               <!--Optional:-->\r
-               <ppi:EmailAddress>?</ppi:EmailAddress>\r
-               <!--Optional:-->\r
-               <ppi:ZipCode>?</ppi:ZipCode>\r
-               <!--Optional:-->\r
-               <ppi:BusinessName>?</ppi:BusinessName>\r
-               <ppi:IsBusinessName>?</ppi:IsBusinessName>\r
-            </ppi:Payor>\r
-            <!--Optional:-->\r
-            <ppi:Vehicle>\r
-               <!--Optional:-->\r
-               <ppip:AbaNumber>?</ppip:AbaNumber>\r
-               <ppip:AccountType>?</ppip:AccountType>\r
-               <!--Optional:-->\r
-               <ppip:CheckNumber>?</ppip:CheckNumber>\r
-               <ppip:CheckType>?</ppip:CheckType>\r
-               <ppip:CheckNumberPosition>?</ppip:CheckNumberPosition>\r
-               <!--Optional:-->\r
-               <ppip:CVV2Code>?</ppip:CVV2Code>\r
-               <!--Optional:-->\r
-               <ppip:ExpirationDate>?</ppip:ExpirationDate>\r
-               <!--Optional:-->\r
-               <ppip:PaymentVehicleNumber>?</ppip:PaymentVehicleNumber>\r
-               <ppip:PaymentMethodCategory>?</ppip:PaymentMethodCategory>\r
-               <ppip:EnforcePinDebitValidation>?</ppip:EnforcePinDebitValidation>\r
-            </ppi:Vehicle>\r
-         </ws:ppiPayment>\r
-      </ws:RefundPPIPayment>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/RefundPPIPayment"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+<con:testCase id="012f4ac8-3e69-4be5-8d22-291e3111dfc5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RefundPPIPayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="012f4ac8-3e69-4be5-8d22-291e3111dfc5fileName">RefundPPIPayment-TestCase</con:setting></con:settings><con:testStep type="request" id="ab5a620c-ef9d-4f7b-8120-20fa2e17ca3d" name="RefundPPIPayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>RefundPPIPayment</con:operation><con:request name="RefundPPIPayment" id="8b40194f-c509-4dec-8ea0-ba5bc3afbad0" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:RefundPPIPayment>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>junit</ppi:UserName>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:Password>testing</ppi:Password><ppi:PPITransactionRequestId>sdfsdf34sdfsdfsdf</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>ab12</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token>
+         <!--Optional:-->
+         
+         <!--Optional:-->
+         
+         <!--Optional:-->
+         
+         <ws:paymentId>3173523490531901</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
+         <ws:isDiffpaymentAccount/>
+         <!--Optional:-->
+         <ws:ppiPayment Notes="">
+            <!--Optional:-->
+            <ppi:AdditionalInfo>
+               <!--Zero or more repetitions:-->
+               
+               <!--Zero or more repetitions:-->
+               
+               <!--Zero or more repetitions:-->
+               
+               <!--Optional:-->
+               
+               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>50.00</ppip:Amount></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2017-10-27T08:59:00.000-04:00</ppi:ProcessDate>
+               <!--Zero or more repetitions:-->
+               
+            </ppi:AdditionalInfo>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <ppi:PreAuthorizeOnly/>
+            <ppi:PaymentSource/>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+         </ws:ppiPayment>
+      </ws:RefundPPIPayment>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/RefundPPIPayment" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="c1ecbbf1-d8ce-47b7-b476-f73478729fa0" name="RefundPPIPayment613"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>RefundPPIPayment</con:operation><con:request name="RefundPPIPayment613" id="8b40194f-c509-4dec-8ea0-ba5bc3afbad0" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:RefundPPIPayment>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>user613</ppi:UserName><ppi:Password>password</ppi:Password><ppi:PPITransactionRequestId>sdfsdf34sdfsdfsdf</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>613</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token>
+         <!--Optional:-->
+         
+         <!--Optional:-->
+         
+         <!--Optional:-->
+         
+         <ws:paymentId>4038040682854947</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
+         <ws:isDiffpaymentAccount/>
+         <!--Optional:-->
+         <ws:ppiPayment Notes="">
+            <!--Optional:-->
+            <ppi:AdditionalInfo>
+               <!--Zero or more repetitions:-->
+               
+               <!--Zero or more repetitions:-->
+               
+               <!--Zero or more repetitions:-->
+               
+               <!--Optional:-->
+               
+               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>1.00</ppip:Amount><ppip:SegmentType>Reconnect Fees</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentSegment><ppip:Amount>2.00</ppip:Amount><ppip:SegmentType>Environment Fees</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentSegment><ppip:Amount>5.00</ppip:Amount><ppip:SegmentType>Payment Amount</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2017-11-06T08:59:00.000-04:00</ppi:ProcessDate>
+               <!--Zero or more repetitions:-->
+               
+            </ppi:AdditionalInfo>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <ppi:Customer><ppi:AddressLine1>dfgdfg</ppi:AddressLine1><ppi:FirstName>dfgdfgdfg</ppi:FirstName><ppi:LastName>dfgdfgdf</ppi:LastName><ppi:PhoneNumber>3332225556</ppi:PhoneNumber><ppi:Zip>21054</ppi:Zip></ppi:Customer><ppi:PreAuthorizeOnly/>
+            <ppi:ClientAccountNumber>3658978</ppi:ClientAccountNumber><ppi:PaymentSource/><ppi:Payor><ppi:AccountName>Hello</ppi:AccountName><ppi:AddressLine1>1580 Mandan road</ppi:AddressLine1><ppi:PhoneNumber>3658965897</ppi:PhoneNumber><ppi:FirstName>hello</ppi:FirstName><ppi:LastName>world</ppi:LastName><ppi:ZipCode>03106</ppi:ZipCode><ppi:IsBusinessName/></ppi:Payor><ppi:Vehicle><ppip:AccountType/><ppip:CheckType/><ppip:CheckNumberPosition/><ppip:CVV2Code>999</ppip:CVV2Code><ppip:ExpirationDate>04/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>5424000000000015</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory><ppip:EnforcePinDebitValidation/></ppi:Vehicle>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+         </ws:ppiPayment>
+      </ws:RefundPPIPayment>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/RefundPPIPayment" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

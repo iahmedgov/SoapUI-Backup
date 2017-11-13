@@ -105,7 +105,7 @@
          </ws:walletRequest>
       </ws:SubmitWalletInformation>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8d414cc5-3acb-4cb0-aae9-9cc6539e8d58" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitWalletInformation"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="63bf49f2-98e0-401f-988e-32fb82c1c35b" name="SubmitWalletInformationWWW"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformationWWW" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8069539d-f842-40ba-aa58-e15e3455ca98" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://upgrade.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8d414cc5-3acb-4cb0-aae9-9cc6539e8d58" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitWalletInformation"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="63bf49f2-98e0-401f-988e-32fb82c1c35b" name="SubmitWalletInformationWWW"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformationWWW" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8069539d-f842-40ba-aa58-e15e3455ca98" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:SubmitWalletInformation>
@@ -128,7 +128,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:NickName>2325PC135</ppi:NickName><ppi:WalletID>2325PC135</ppi:WalletID><ppi:Vehicle>
+            <ppi:NickName>2325PC138</ppi:NickName><ppi:WalletID>2325PC138</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
                <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
@@ -169,8 +169,8 @@
                
                <!--Optional:-->
                
-               <ppi:AddressLine1>1387 N DUPONT HWY</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>chota</ppi:FirstName><ppi:LastName>chatri</ppi:LastName><ppi:ZipCode>27017-1234</ppi:ZipCode><ppi:BusinessName>WINNER DOVER 1387 LLC</ppi:BusinessName><ppi:IsBusinessName>false</ppi:IsBusinessName>
-            </ppi:Payor><ppi:ClientReferenceNumber>2325PC135</ppi:ClientReferenceNumber>
+               <ppi:AddressLine1>1387 N DUPONT HWY</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>chota</ppi:FirstName><ppi:LastName>chatri</ppi:LastName><ppi:ZipCode>27017</ppi:ZipCode><ppi:BusinessName>WINNER DOVER 1387 LLC</ppi:BusinessName><ppi:IsBusinessName>false</ppi:IsBusinessName>
+            </ppi:Payor><ppi:ClientReferenceNumber>2325PC138</ppi:ClientReferenceNumber>
             <!--Optional:-->
             
             <!--Optional:-->
