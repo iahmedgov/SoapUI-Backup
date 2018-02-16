@@ -20,8 +20,8 @@
          
          <!--Optional:-->
          
-         <ws:paymentId>3173523490531901</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
-         <ws:isDiffpaymentAccount/>
+         <ws:paymentId>1133177435537980</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
+         <ws:isDiffpaymentAccount>false</ws:isDiffpaymentAccount>
          <!--Optional:-->
          <ws:ppiPayment Notes="">
             <!--Optional:-->
@@ -34,7 +34,7 @@
                
                <!--Optional:-->
                
-               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>50.00</ppip:Amount></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2017-10-27T08:59:00.000-04:00</ppi:ProcessDate>
+               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>10.00</ppip:Amount><ppip:SegmentType>Utility</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2018-02-13T08:59:00.000-04:00</ppi:ProcessDate><ppi:CustomData><ppi:ID>CustomData1</ppi:ID><ppi:Value>hello</ppi:Value></ppi:CustomData>
                <!--Zero or more repetitions:-->
                
             </ppi:AdditionalInfo>
@@ -43,7 +43,7 @@
             <!--Optional:-->
             
             <ppi:PreAuthorizeOnly/>
-            <ppi:PaymentSource/>
+            <ppi:ClientAccountNumber>can23456</ppi:ClientAccountNumber><ppi:PaymentSource/><ppi:Payor><ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:PhoneNumber>5555555555</ppi:PhoneNumber><ppi:FirstName>Michael</ppi:FirstName><ppi:LastName>Clarke</ppi:LastName><ppi:ZipCode>21114</ppi:ZipCode><ppi:IsBusinessName/></ppi:Payor><ppi:Vehicle><ppip:AccountType/><ppip:CheckType/><ppip:CheckNumberPosition/><ppip:CVV2Code>145</ppip:CVV2Code><ppip:ExpirationDate>12/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory><ppip:EnforcePinDebitValidation/></ppi:Vehicle>
             <!--Optional:-->
             
             <!--Optional:-->
@@ -72,8 +72,8 @@
          
          <!--Optional:-->
          
-         <ws:paymentId>4038040682854947</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
-         <ws:isDiffpaymentAccount/>
+         <ws:paymentId>3037270542582324</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
+         <ws:isDiffpaymentAccount>true</ws:isDiffpaymentAccount>
          <!--Optional:-->
          <ws:ppiPayment Notes="">
             <!--Optional:-->
@@ -86,7 +86,7 @@
                
                <!--Optional:-->
                
-               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>1.00</ppip:Amount><ppip:SegmentType>Reconnect Fees</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentSegment><ppip:Amount>2.00</ppip:Amount><ppip:SegmentType>Environment Fees</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentSegment><ppip:Amount>5.00</ppip:Amount><ppip:SegmentType>Payment Amount</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2017-11-06T08:59:00.000-04:00</ppi:ProcessDate>
+               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>9.00</ppip:Amount><ppip:SegmentType>Reconnect Fees</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentSegment><ppip:Amount>3.00</ppip:Amount><ppip:SegmentType>Environment Fees</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentSegment><ppip:Amount>2.00</ppip:Amount><ppip:SegmentType>Payment Amount</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2018-01-25T08:59:00.000-04:00</ppi:ProcessDate>
                <!--Zero or more repetitions:-->
                
             </ppi:AdditionalInfo>
@@ -95,7 +95,7 @@
             <!--Optional:-->
             
             <ppi:Customer><ppi:AddressLine1>dfgdfg</ppi:AddressLine1><ppi:FirstName>dfgdfgdfg</ppi:FirstName><ppi:LastName>dfgdfgdf</ppi:LastName><ppi:PhoneNumber>3332225556</ppi:PhoneNumber><ppi:Zip>21054</ppi:Zip></ppi:Customer><ppi:PreAuthorizeOnly/>
-            <ppi:ClientAccountNumber>3658978</ppi:ClientAccountNumber><ppi:PaymentSource/><ppi:Payor><ppi:AccountName>Hello</ppi:AccountName><ppi:AddressLine1>1580 Mandan road</ppi:AddressLine1><ppi:PhoneNumber>3658965897</ppi:PhoneNumber><ppi:FirstName>hello</ppi:FirstName><ppi:LastName>world</ppi:LastName><ppi:ZipCode>03106</ppi:ZipCode><ppi:IsBusinessName/></ppi:Payor><ppi:Vehicle><ppip:AccountType/><ppip:CheckType/><ppip:CheckNumberPosition/><ppip:CVV2Code>999</ppip:CVV2Code><ppip:ExpirationDate>04/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>5424000000000015</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory><ppip:EnforcePinDebitValidation/></ppi:Vehicle>
+            <ppi:ClientAccountNumber>3658978</ppi:ClientAccountNumber><ppi:PaymentSource/><ppi:Payor><ppi:AccountName>Hello</ppi:AccountName><ppi:AddressLine1>1580 Mandan road</ppi:AddressLine1><ppi:PhoneNumber>3658965897</ppi:PhoneNumber><ppi:FirstName>hello</ppi:FirstName><ppi:LastName>world</ppi:LastName><ppi:ZipCode>03106</ppi:ZipCode><ppi:IsBusinessName/></ppi:Payor><ppi:Vehicle><ppip:AccountType/><ppip:CheckType/><ppip:CheckNumberPosition/><ppip:CVV2Code>145</ppip:CVV2Code><ppip:ExpirationDate>03/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory><ppip:EnforcePinDebitValidation/></ppi:Vehicle>
             <!--Optional:-->
             
             <!--Optional:-->

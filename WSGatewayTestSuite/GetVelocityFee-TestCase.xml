@@ -56,8 +56,8 @@
             <!--Optional:-->
             
          <ppi:UserName>user2325</ppi:UserName><ppi:Password>pwd2325</ppi:Password><ppi:PPITransactionRequestId>sdf34tegdfg456rgdfg</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>2325</ppi:PPIBusinessEntityIdentifierToken></ws:token>
-         <ws:amount>10</ws:amount>
-         <ws:paymentType>1</ws:paymentType><ws:accountNumber>5424000000000015</ws:accountNumber>
+         <ws:amount>2.25</ws:amount>
+         <ws:paymentType>1</ws:paymentType><ws:accountNumber>6011000000000004</ws:accountNumber>
          <!--Optional:-->
          
       </ws:GetVelocityFee>

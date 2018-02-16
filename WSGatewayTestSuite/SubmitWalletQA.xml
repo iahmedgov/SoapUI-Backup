@@ -128,13 +128,13 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:NickName>2325PC138</ppi:NickName><ppi:WalletID>2325PC138</ppi:WalletID><ppi:Vehicle>
+            <ppi:NickName>2325PC143</ppi:NickName><ppi:WalletID>2325PC143</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
-               <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
+               <ppip:AccountType/>
                <!--Optional:-->
                
-               <ppip:CheckType>Personal</ppip:CheckType>
+               <ppip:CheckType/>
                <ppip:CheckNumberPosition/>
                <!--Optional:-->
                
@@ -142,7 +142,7 @@
                
                <!--Optional:-->
                
-               <ppip:PaymentVehicleNumber>11111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
+               <ppip:CVV2Code>145</ppip:CVV2Code><ppip:ExpirationDate>12/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory>
                <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
             </ppi:Vehicle>
             <!--Optional:-->
@@ -169,8 +169,8 @@
                
                <!--Optional:-->
                
-               <ppi:AddressLine1>1387 N DUPONT HWY</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>chota</ppi:FirstName><ppi:LastName>chatri</ppi:LastName><ppi:ZipCode>27017</ppi:ZipCode><ppi:BusinessName>WINNER DOVER 1387 LLC</ppi:BusinessName><ppi:IsBusinessName>false</ppi:IsBusinessName>
-            </ppi:Payor><ppi:ClientReferenceNumber>2325PC138</ppi:ClientReferenceNumber>
+               <ppi:AddressLine1>1387 N DUPONT HWY</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>chotass</ppi:FirstName><ppi:LastName>chatriss</ppi:LastName><ppi:ZipCode>27017</ppi:ZipCode><ppi:IsBusinessName>false</ppi:IsBusinessName>
+            </ppi:Payor><ppi:ClientReferenceNumber>2325PC143</ppi:ClientReferenceNumber>
             <!--Optional:-->
             
             <!--Optional:-->
@@ -178,7 +178,7 @@
          </ws:walletRequest>
       </ws:SubmitWalletInformation>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8d414cc5-3acb-4cb0-aae9-9cc6539e8d58" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitWalletInformation"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="50e1f2ec-27bf-45a5-a7d6-6859226541b0" name="SubmitWalletInformationQA495"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformationQA495" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8069539d-f842-40ba-aa58-e15e3455ca98" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8d414cc5-3acb-4cb0-aae9-9cc6539e8d58" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitWalletInformation"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="50e1f2ec-27bf-45a5-a7d6-6859226541b0" name="SubmitWalletInformationQA524"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformationQA524" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8069539d-f842-40ba-aa58-e15e3455ca98" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:SubmitWalletInformation>
@@ -201,13 +201,13 @@
             
             <!--Optional:-->
             
-            <ppi:NickName>524BC142</ppi:NickName><ppi:WalletID>524BC142</ppi:WalletID><ppi:Vehicle>
+            <ppi:NickName>524Nickname142</ppi:NickName><ppi:WalletID>524Wallet142</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
                <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
                <!--Optional:-->
                
-               <ppip:CheckType>Business</ppip:CheckType>
+               <ppip:CheckType>Personal</ppip:CheckType>
                <ppip:CheckNumberPosition/>
                <!--Optional:-->
                <!--Optional:-->
@@ -215,7 +215,7 @@
                <!--Optional:-->
                
                
-               <ppip:PaymentVehicleNumber>33333333</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
+               <ppip:PaymentVehicleNumber>22222222</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
                <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
             </ppi:Vehicle>
             <!--Optional:-->
@@ -243,7 +243,7 @@
                
                
                <ppi:AccountName>ac name</ppi:AccountName><ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>5471250011</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>19806</ppi:ZipCode><ppi:BusinessName>DELAWARE KIA &amp; SUBARU</ppi:BusinessName><ppi:IsBusinessName>false</ppi:IsBusinessName>
-            </ppi:Payor><ppi:ClientReferenceNumber>can524BC142</ppi:ClientReferenceNumber>
+            </ppi:Payor><ppi:ClientReferenceNumber>CAN524100</ppi:ClientReferenceNumber>
             <!--Optional:-->
             <!--Optional:-->
             
@@ -313,6 +313,152 @@
             <!--Optional:-->
             
             <!--Optional:-->
+            
+         </ws:walletRequest>
+      </ws:SubmitWalletInformation>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8d414cc5-3acb-4cb0-aae9-9cc6539e8d58" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitWalletInformation"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="48b1e2dd-b32a-46ac-a6ec-93365d5fe12a" name="SubmitWalletInformationQA495"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformationQA495" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8069539d-f842-40ba-aa58-e15e3455ca98" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:SubmitWalletInformation>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>user495</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>pwd495</ppi:Password><ppi:PPITransactionRequestId>Request15</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>495</ppi:PPIBusinessEntityIdentifierToken>
+            
+         </ws:token>
+         <!--Optional:-->
+         <ws:walletRequest>
+            <ppi:Action>AddToken</ppi:Action>
+            <!--Optional:-->
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <ppi:NickName>495Nickname100</ppi:NickName><ppi:WalletID>495Wallet100</ppi:WalletID><ppi:Vehicle>
+               <!--Optional:-->
+               
+               <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
+               <!--Optional:-->
+               
+               <ppip:CheckType>Business</ppip:CheckType>
+               <ppip:CheckNumberPosition/>
+               <!--Optional:-->
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               
+               <ppip:PaymentVehicleNumber>33333333</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
+               <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
+            </ppi:Vehicle>
+            <!--Optional:-->
+            <ppi:Payor>
+               <!--Optional:-->
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+              <!-- <ppi:FirstName/>-->
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               
+               <ppi:AccountName>ac name</ppi:AccountName><ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>5471250011</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>19806</ppi:ZipCode><ppi:BusinessName>DELAWARE KIA &amp; SUBARU</ppi:BusinessName><ppi:IsBusinessName>false</ppi:IsBusinessName>
+            </ppi:Payor><ppi:ClientReferenceNumber>495CAN100</ppi:ClientReferenceNumber>
+            <!--Optional:-->
+            <!--Optional:-->
+            
+            
+         </ws:walletRequest>
+      </ws:SubmitWalletInformation>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="8d414cc5-3acb-4cb0-aae9-9cc6539e8d58" name="SOAP Response"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/SubmitWalletInformation"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="0c3b6b8a-24a1-4754-92a3-fdca07841c26" name="SubmitWalletInformationQA509"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformationQA509" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="8069539d-f842-40ba-aa58-e15e3455ca98" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:SubmitWalletInformation>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>user509</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>pwd509</ppi:Password><ppi:PPITransactionRequestId>Request15</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>509</ppi:PPIBusinessEntityIdentifierToken>
+            
+         </ws:token>
+         <!--Optional:-->
+         <ws:walletRequest>
+            <ppi:Action>AddToken</ppi:Action>
+            <!--Optional:-->
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <ppi:NickName>509Nickname100</ppi:NickName><ppi:WalletID>509Wallet100</ppi:WalletID><ppi:Vehicle>
+               <!--Optional:-->
+               
+               <ppip:AccountType/>
+               <!--Optional:-->
+               
+               <ppip:CheckType/>
+               <ppip:CheckNumberPosition/>
+               <!--Optional:-->
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               
+               <ppip:CVV2Code>145</ppip:CVV2Code><ppip:ExpirationDate>12/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory>
+               <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
+            </ppi:Vehicle>
+            <!--Optional:-->
+            <ppi:Payor>
+               <!--Optional:-->
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+              <!-- <ppi:FirstName/>-->
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               <!--Optional:-->
+               
+               
+               <ppi:AccountName>ac name</ppi:AccountName><ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>5471250011</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>19806</ppi:ZipCode><ppi:BusinessName>DELAWARE KIA &amp; SUBARU</ppi:BusinessName><ppi:IsBusinessName>false</ppi:IsBusinessName>
+            </ppi:Payor><ppi:ClientReferenceNumber>509CAN100</ppi:ClientReferenceNumber>
+            <!--Optional:-->
+            <!--Optional:-->
+            
             
          </ws:walletRequest>
       </ws:SubmitWalletInformation>

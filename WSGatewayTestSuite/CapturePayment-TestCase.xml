@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="2bcb0b13-c429-4fc8-a863-94f451d27879" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CapturePayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="2bcb0b13-c429-4fc8-a863-94f451d27879fileName">CapturePayment-TestCase</con:setting></con:settings><con:testStep type="request" id="50195d70-f0bb-42df-b622-7742ffedb201" name="CapturePayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>CapturePayment</con:operation><con:request name="CapturePayment" id="8b925bfb-5bb2-4184-beac-053d99cd7a60" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
+<con:testCase id="2bcb0b13-c429-4fc8-a863-94f451d27879" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CapturePayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="2bcb0b13-c429-4fc8-a863-94f451d27879fileName">CapturePayment-TestCase</con:setting></con:settings><con:testStep type="request" id="50195d70-f0bb-42df-b622-7742ffedb201" name="CapturePayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>CapturePayment</con:operation><con:request name="CapturePayment" id="8b925bfb-5bb2-4184-beac-053d99cd7a60" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:CapturePayment>
@@ -8,12 +8,50 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:UserName>user524</ppi:UserName>
+            <ppi:UserName>user509</ppi:UserName>
             <!--Optional:-->
-            <ppi:Password>pwd524</ppi:Password>
+            <ppi:Password>pwd509</ppi:Password>
             <!--Optional:-->
-            <ppi:PPITransactionRequestId>sdfs345sdfsdfsdfs</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>524</ppi:PPIBusinessEntityIdentifierToken>
-         </ws:token><ws:paymentId>11887671</ws:paymentId>
+            <ppi:PPITransactionRequestId>sdfs345sdfsdfsdfs</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>509</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token><ws:paymentId>1814319763839165</ws:paymentId>
+         <!--Optional:-->
+         
+      </ws:CapturePayment>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/CapturePayment" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="3d7f6bba-6305-48c3-92db-2bd5c91c3a68" name="CapturePaymentWWWAdvancedCF"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>CapturePayment</con:operation><con:request name="CapturePaymentWWWAdvancedCF" id="8b925bfb-5bb2-4184-beac-053d99cd7a60" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:CapturePayment>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>user548</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>pwd548</ppi:Password>
+            <!--Optional:-->
+            <ppi:PPITransactionRequestId>sdfs345sdfsdfsdfs</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>0548</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token><ws:paymentId>3777182645886010</ws:paymentId>
+         <!--Optional:-->
+         
+      </ws:CapturePayment>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/CapturePayment" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="a13d24b4-7a70-4664-ac67-54b75ce5bb79" name="CapturePayment180"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>CapturePayment</con:operation><con:request name="CapturePayment180" id="8b925bfb-5bb2-4184-beac-053d99cd7a60" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:CapturePayment>
+         <!--Optional:-->
+         <ws:token>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <ppi:UserName>junit</ppi:UserName>
+            <!--Optional:-->
+            <ppi:Password>testing</ppi:Password><ppi:PPITransactionRequestId>sdfs345sdfsdfsdfs</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>ab12</ppi:PPIBusinessEntityIdentifierToken>
+         </ws:token><ws:paymentId>194516943778054</ws:paymentId>
          <!--Optional:-->
          
       </ws:CapturePayment>
