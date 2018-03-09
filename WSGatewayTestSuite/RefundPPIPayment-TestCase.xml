@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="012f4ac8-3e69-4be5-8d22-291e3111dfc5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RefundPPIPayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="012f4ac8-3e69-4be5-8d22-291e3111dfc5fileName">RefundPPIPayment-TestCase</con:setting></con:settings><con:testStep type="request" id="ab5a620c-ef9d-4f7b-8120-20fa2e17ca3d" name="RefundPPIPayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>RefundPPIPayment</con:operation><con:request name="RefundPPIPayment" id="8b40194f-c509-4dec-8ea0-ba5bc3afbad0" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+<con:testCase id="012f4ac8-3e69-4be5-8d22-291e3111dfc5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RefundPPIPayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="012f4ac8-3e69-4be5-8d22-291e3111dfc5fileName">RefundPPIPayment-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="ab5a620c-ef9d-4f7b-8120-20fa2e17ca3d" name="RefundPPIPayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>RefundPPIPayment</con:operation><con:request name="RefundPPIPayment" id="8b40194f-c509-4dec-8ea0-ba5bc3afbad0" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:RefundPPIPayment>
@@ -20,7 +20,7 @@
          
          <!--Optional:-->
          
-         <ws:paymentId>1133177435537980</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
+         <ws:paymentId>1903453971750972</ws:paymentId><ws:code>A01</ws:code><ws:isRefundMemo/>
          <ws:isDiffpaymentAccount>false</ws:isDiffpaymentAccount>
          <!--Optional:-->
          <ws:ppiPayment Notes="">
@@ -34,7 +34,7 @@
                
                <!--Optional:-->
                
-               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>10.00</ppip:Amount><ppip:SegmentType>Utility</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2018-02-13T08:59:00.000-04:00</ppi:ProcessDate><ppi:CustomData><ppi:ID>CustomData1</ppi:ID><ppi:Value>hello</ppi:Value></ppi:CustomData>
+               <ppi:Fees><ppip:FeeType>Customer</ppip:FeeType><ppip:Amount>0</ppip:Amount></ppi:Fees><ppi:PaymentSegment><ppip:Amount>10.00</ppip:Amount><ppip:SegmentType>Utility</ppip:SegmentType></ppi:PaymentSegment><ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2018-02-22T08:59:00.000-04:00</ppi:ProcessDate><ppi:CustomData><ppi:ID>CustomData1</ppi:ID><ppi:Value>hello</ppi:Value></ppi:CustomData>
                <!--Zero or more repetitions:-->
                
             </ppi:AdditionalInfo>
@@ -43,7 +43,7 @@
             <!--Optional:-->
             
             <ppi:PreAuthorizeOnly/>
-            <ppi:ClientAccountNumber>can23456</ppi:ClientAccountNumber><ppi:PaymentSource/><ppi:Payor><ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:PhoneNumber>5555555555</ppi:PhoneNumber><ppi:FirstName>Michael</ppi:FirstName><ppi:LastName>Clarke</ppi:LastName><ppi:ZipCode>21114</ppi:ZipCode><ppi:IsBusinessName/></ppi:Payor><ppi:Vehicle><ppip:AccountType/><ppip:CheckType/><ppip:CheckNumberPosition/><ppip:CVV2Code>145</ppip:CVV2Code><ppip:ExpirationDate>12/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory><ppip:EnforcePinDebitValidation/></ppi:Vehicle>
+            <ppi:ClientAccountNumber>can23456</ppi:ClientAccountNumber><ppi:PaymentSource/><ppi:Payor><ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:PhoneNumber>5555555555</ppi:PhoneNumber><ppi:FirstName>Michael</ppi:FirstName><ppi:LastName>Clarke</ppi:LastName><ppi:ZipCode>21114</ppi:ZipCode><ppi:IsBusinessName/></ppi:Payor><ppi:Vehicle><ppip:AccountType/><ppip:CheckType/><ppip:CheckNumberPosition/><ppip:CVV2Code>369</ppip:CVV2Code><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory><ppip:EnforcePinDebitValidation/></ppi:Vehicle>
             <!--Optional:-->
             
             <!--Optional:-->
