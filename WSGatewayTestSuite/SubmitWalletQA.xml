@@ -128,7 +128,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:NickName>2325PC143</ppi:NickName><ppi:WalletID>2325PC143</ppi:WalletID><ppi:Vehicle>
+            <ppi:NickName>2325PC152</ppi:NickName><ppi:WalletID>2325PC152</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
                <ppip:AccountType/>
@@ -142,7 +142,7 @@
                
                <!--Optional:-->
                
-               <ppip:CVV2Code>145</ppip:CVV2Code><ppip:ExpirationDate>12/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory>
+               <ppip:CVV2Code>123</ppip:CVV2Code><ppip:ExpirationDate>12/20</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory>
                <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
             </ppi:Vehicle>
             <!--Optional:-->
@@ -170,7 +170,7 @@
                <!--Optional:-->
                
                <ppi:AddressLine1>1387 N DUPONT HWY</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>US</ppi:Country><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>chotass</ppi:FirstName><ppi:LastName>chatriss</ppi:LastName><ppi:ZipCode>27017</ppi:ZipCode><ppi:IsBusinessName>false</ppi:IsBusinessName>
-            </ppi:Payor><ppi:ClientReferenceNumber>2325PC143</ppi:ClientReferenceNumber>
+            </ppi:Payor><ppi:ClientReferenceNumber>2325PC152</ppi:ClientReferenceNumber>
             <!--Optional:-->
             
             <!--Optional:-->
