@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="b03ab0b9-4139-493c-b1e5-3cf00c2810d1" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SubmitWalletInformation TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b03ab0b9-4139-493c-b1e5-3cf00c2810d1fileName">SubmitWalletInformation-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="52f4359c-2fac-4ef4-a42e-b9f7e6c06b40" name="SubmitWalletInformation"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformation" id="2e8ca9cf-f51b-48e1-98d3-b2662375c32d" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+<con:testCase id="b03ab0b9-4139-493c-b1e5-3cf00c2810d1" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SubmitWalletInformation TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b03ab0b9-4139-493c-b1e5-3cf00c2810d1fileName">SubmitWalletInformation-TestCase</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="request" id="52f4359c-2fac-4ef4-a42e-b9f7e6c06b40" name="SubmitWalletInformation">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>SubmitWalletInformation</con:operation>
+      <con:request name="SubmitWalletInformation" id="2e8ca9cf-f51b-48e1-98d3-b2662375c32d" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:SubmitWalletInformation>
@@ -72,7 +88,29 @@
          </ws:walletRequest>
       </ws:SubmitWalletInformation>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitWalletInformation" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="dd598f2e-3978-4249-9862-a7d11a3779de" name="SubmitWalletInformationDemo"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitWalletInformation</con:operation><con:request name="SubmitWalletInformationDemo" id="2e8ca9cf-f51b-48e1-98d3-b2662375c32d" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitWalletInformation" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="dd598f2e-3978-4249-9862-a7d11a3779de" name="SubmitWalletInformationDemo">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>SubmitWalletInformation</con:operation>
+      <con:request name="SubmitWalletInformationDemo" id="2e8ca9cf-f51b-48e1-98d3-b2662375c32d" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:SubmitWalletInformation>
@@ -86,7 +124,7 @@
             
             <!--Optional:-->
             
-         <ppi:UserName>res_ACH</ppi:UserName><ppi:Password>fire23fly</ppi:Password><ppi:PPITransactionRequestId>sdfsdfsdfsdfsdf3r3f</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>2988</ppi:PPIBusinessEntityIdentifierToken></ws:token>
+         <ppi:UserName>delcorp</ppi:UserName><ppi:Password>D3lC0rp0r</ppi:Password><ppi:PPITransactionRequestId>311222</ppi:PPITransactionRequestId><ppi:PPIBusinessEntityIdentifierToken>327</ppi:PPIBusinessEntityIdentifierToken></ws:token>
          <!--Optional:-->
          <ws:walletRequest>
             <ppi:Action>AddToken</ppi:Action>
@@ -95,13 +133,13 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:NickName>2988Nickname100</ppi:NickName><ppi:WalletID>2988Wallet100</ppi:WalletID><ppi:Vehicle>
+            <ppi:WalletID>45449</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
-               <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
+               <ppip:AbaNumber>333333</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
                <!--Optional:-->
                
-               <ppip:CheckType>Business</ppip:CheckType>
+               <ppip:CheckType>Personal</ppip:CheckType>
                <ppip:CheckNumberPosition/>
                <!--Optional:-->
                
@@ -109,7 +147,7 @@
                
                <!--Optional:-->
                
-               <ppip:PaymentVehicleNumber>11111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
+               <ppip:PaymentVehicleNumber>233329</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
                <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
             </ppi:Vehicle>
             <!--Optional:-->
@@ -136,8 +174,8 @@
                
                <!--Optional:-->
                
-               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>James</ppi:FirstName><ppi:LastName>Kites</ppi:LastName><ppi:ZipCode>21114</ppi:ZipCode><ppi:BusinessName>My Business</ppi:BusinessName><ppi:IsBusinessName/>
-            </ppi:Payor><ppi:ClientReferenceNumber>can111222</ppi:ClientReferenceNumber>
+               <ppi:AddressLine1>401 Fed St</ppi:AddressLine1><ppi:Country>US</ppi:Country><ppi:PhoneNumber>3028573031</ppi:PhoneNumber><ppi:FirstName>Sam</ppi:FirstName><ppi:LastName>Ackah</ppi:LastName><ppi:ZipCode>19901</ppi:ZipCode><ppi:IsBusinessName/>
+            </ppi:Payor><ppi:ClientReferenceNumber>Somxxsd</ppi:ClientReferenceNumber>
             <!--Optional:-->
             
             <!--Optional:-->
@@ -145,4 +183,17 @@
          </ws:walletRequest>
       </ws:SubmitWalletInformation>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitWalletInformation" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitWalletInformation" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

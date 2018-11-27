@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:WsdlInterface" id="5415dd8e-f6b4-4435-adb8-905cf6ad170b" wsaVersion="NONE" name="PPIServiceFacadeSoap" type="wsdl" bindingName="{https://www.velocitypayment.com/ws}PPIServiceFacadeSoap" soapVersion="1_1" anonymous="optional" definition="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="5415dd8e-f6b4-4435-adb8-905cf6ad170bfileName">PPIServiceFacadeSoap</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL"><con:part><con:url>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL</con:url><con:content><![CDATA[<!--Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6.-->
+<con:interface xsi:type="con:WsdlInterface" id="5415dd8e-f6b4-4435-adb8-905cf6ad170b" wsaVersion="NONE" name="PPIServiceFacadeSoap" type="wsdl" bindingName="{https://www.velocitypayment.com/ws}PPIServiceFacadeSoap" soapVersion="1_1" anonymous="optional" definition="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5415dd8e-f6b4-4435-adb8-905cf6ad170bfileName">PPIServiceFacadeSoap</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL">
+    <con:part>
+      <con:url>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService?WSDL</con:url>
+      <con:content><![CDATA[<!--Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6.-->
 <wsdl:definitions targetNamespace="https://www.velocitypayment.com/ws" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://www.ePayments.com/PPI" xmlns:s2="http://www.ePayments.com/PPIPayment" xmlns:s3="http://tempuri.org/TransactionData.xsd" xmlns:s4="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:tns="https://www.velocitypayment.com/ws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="https://www.velocitypayment.com/ws">
@@ -1251,4 +1258,17 @@
       <soap12:address location="https://demo.velocitypayment.com:443/vgateway/VGatewayWebService"/>
     </wsdl:port>
   </wsdl:service>
-</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:endpoint>https://upgrade.velocitypayment.com:443/vgateway/PPIServiceFacadeSoap</con:endpoint><con:endpoint>https://upgrade.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:endpoint>https://www.velocitypayment.com:443/vgateway/PPIServiceFacadeSoap</con:endpoint><con:endpoint>https://www.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint></con:endpoints></con:interface>
+</wsdl:definitions>]]></con:content>
+      <con:type>http://schemas.xmlsoap.org/wsdl/</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>https://demo.velocitypayment.com/vgateway/VGatewayWebService?WSDL</con:endpoint>
+    <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+    <con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+    <con:endpoint>https://upgrade.velocitypayment.com:443/vgateway/PPIServiceFacadeSoap</con:endpoint>
+    <con:endpoint>https://upgrade.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+    <con:endpoint>https://www.velocitypayment.com:443/vgateway/PPIServiceFacadeSoap</con:endpoint>
+    <con:endpoint>https://www.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+  </con:endpoints>
+</con:interface>

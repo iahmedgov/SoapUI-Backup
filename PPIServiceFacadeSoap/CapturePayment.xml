@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="516712c0-de65-4f9d-a164-539932d315a9" isOneWay="false" action="https://www.velocitypayment.com/ws/CapturePayment" name="CapturePayment" bindingOperationName="CapturePayment" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="516712c0-de65-4f9d-a164-539932d315a9fileName">CapturePayment</con:setting></con:settings><con:call id="10ebfd7c-4e48-499a-bf56-94a55197a078" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+<con:operation id="516712c0-de65-4f9d-a164-539932d315a9" isOneWay="false" action="https://www.velocitypayment.com/ws/CapturePayment" name="CapturePayment" bindingOperationName="CapturePayment" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="516712c0-de65-4f9d-a164-539932d315a9fileName">CapturePayment</con:setting>
+  </con:settings>
+  <con:call id="10ebfd7c-4e48-499a-bf56-94a55197a078" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ws:CapturePayment>\r
@@ -18,4 +26,13 @@
          <ws:paymentId>?</ws:paymentId>\r
       </ws:CapturePayment>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/CapturePayment"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/CapturePayment"/>
+    <con:wsrmConfig version="1.2"/>
+  </con:call>
+</con:operation>

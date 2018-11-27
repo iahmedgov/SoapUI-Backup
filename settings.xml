@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="ec98f6bc-0b3a-4405-a633-8e044f4f6879" activeEnvironment="Default environment" name="WSGateway01292016" resourceRoot="" soapui-version="6.0.0" lastOpened="2018-05-07T11:38:38.936-04:00" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="ec98f6bc-0b3a-4405-a633-8e044f4f6879" activeEnvironment="Default environment" name="WSGateway01292016" resourceRoot="" soapui-version="6.0.0" lastOpened="2018-05-07T11:38:38.936-04:00" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Report Format(s)" value=""/>
   <con:entry key="Host:Port" value=""/>
   <con:entry key="Export JUnit Results" value="false"/>
@@ -32,4 +34,54 @@
   <con:entry key="Domain" value=""/>
   <con:entry key="Tool Args" value=""/>
   <con:entry key="Save Project" value="false"/>
-</xml-fragment>]]></con:setting><con:setting id="ec98f6bc-0b3a-4405-a633-8e044f4f6879fileName">SoapUI08032017</con:setting></con:settings><con:vcsConfiguration><con:vcsName>Git</con:vcsName><con:repositoryIdentifier>https://github.com/iahmedgov/SoapUI</con:repositoryIdentifier></con:vcsConfiguration><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties><con:property><con:name>CAN</con:name></con:property></con:properties><con:wssContainer/><con:databaseConnectionContainer><con:databaseConnection><con:name>GovolutionAutomationData</con:name><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://dev-db01:1433;databaseName=GovolutionTestData;user=qa_automation;password=PASS_VALUE</con:connectionString><con:password>t3st@u70Mat!on</con:password></con:databaseConnection></con:databaseConnectionContainer><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:authRepository/><con:tags><con:tag><con:id>2a7bf078-df0c-46fa-84ea-5bd472eb578f</con:id><con:name>Register</con:name></con:tag><con:tag><con:id>8a521550-6ac3-4c7c-a934-ce6f40204807</con:id><con:name>Wallet</con:name></con:tag><con:tag><con:id>966dcf3a-e38d-4d79-a753-bebd146e0f6b</con:id><con:name>Payment</con:name></con:tag><con:tag><con:id>f0543ac6-5797-4083-b0f5-de87f5a27846</con:id><con:name>Old Convenience Fees</con:name></con:tag><con:tag><con:id>f0b98970-4ed0-432b-b956-8f2cf2e6cef1</con:id><con:name>Advanced Convenience Fees</con:name></con:tag></con:tags></con:soapui-project>
+</xml-fragment>]]></con:setting>
+    <con:setting id="ec98f6bc-0b3a-4405-a633-8e044f4f6879fileName">SoapUI08032017</con:setting>
+  </con:settings>
+  <con:vcsConfiguration>
+    <con:vcsName>Git</con:vcsName>
+    <con:repositoryIdentifier>https://github.com/iahmedgov/SoapUI</con:repositoryIdentifier>
+  </con:vcsConfiguration>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>CAN</con:name>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer>
+    <con:databaseConnection>
+      <con:name>GovolutionAutomationData</con:name>
+      <con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver>
+      <con:connectionString>jdbc:sqlserver://dev-db01:1433;databaseName=GovolutionTestData;user=qa_automation;password=PASS_VALUE</con:connectionString>
+      <con:password>t3st@u70Mat!on</con:password>
+      <con:connectionProperties/>
+    </con:databaseConnection>
+  </con:databaseConnectionContainer>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:authRepository/>
+  <con:tags>
+    <con:tag>
+      <con:id>2a7bf078-df0c-46fa-84ea-5bd472eb578f</con:id>
+      <con:name>Register</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>8a521550-6ac3-4c7c-a934-ce6f40204807</con:id>
+      <con:name>Wallet</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>966dcf3a-e38d-4d79-a753-bebd146e0f6b</con:id>
+      <con:name>Payment</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>f0543ac6-5797-4083-b0f5-de87f5a27846</con:id>
+      <con:name>Old Convenience Fees</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>f0b98970-4ed0-432b-b956-8f2cf2e6cef1</con:id>
+      <con:name>Advanced Convenience Fees</con:name>
+    </con:tag>
+  </con:tags>
+</con:soapui-project>

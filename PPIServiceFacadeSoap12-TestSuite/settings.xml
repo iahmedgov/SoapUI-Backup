@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="505beb94-80cf-457d-98bb-707ebdaedbd1" name="PPIServiceFacadeSoap12 TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="505beb94-80cf-457d-98bb-707ebdaedbd1fileName">PPIServiceFacadeSoap12-TestSuite</con:setting></con:settings><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
+<con:testSuite id="505beb94-80cf-457d-98bb-707ebdaedbd1" name="PPIServiceFacadeSoap12 TestSuite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="505beb94-80cf-457d-98bb-707ebdaedbd1fileName">PPIServiceFacadeSoap12-TestSuite</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

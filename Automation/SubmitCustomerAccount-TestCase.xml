@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="d2fbc1ee-f65f-400f-98ce-794834b3f85a" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="SubmitCustomerAccount TestCase" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="IncludeOverview">true</con:setting><con:setting id="IncludeResults">true</con:setting><con:setting id="FlowLayout">false</con:setting><con:setting id="ErrorDetails">true</con:setting><con:setting id="IncludeCoverage">true</con:setting><con:setting id="d2fbc1ee-f65f-400f-98ce-794834b3f85afileName">SubmitCustomerAccount-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="datasource" name="DataSourceRegister" id="6850cbc0-8706-4f8d-a2b5-cb52bcda5087"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>C:/SoapData/RegisterData.xlsx</file><worksheet>RegisterData</worksheet><cell>A2</cell><ignoreEmpty>false</ignoreEmpty></con:configuration></con:dataSource><con:property>ACNotes</con:property><con:property>TokenUserName</con:property><con:property>TokenPassword</con:property><con:property>TokenRequestID</con:property><con:property>TokenIdentifier</con:property><con:property>AccountNotes</con:property><con:property>CAL1</con:property><con:property>CAL2</con:property><con:property>Ccountry</con:property><con:property>Cemail</con:property><con:property>Cfname</con:property><con:property>Clname</con:property><con:property>Cmi</con:property><con:property>Cnotes</con:property><con:property>Cphone</con:property><con:property>Czip</con:property><con:property>Cpassword</con:property><con:property>Cdid</con:property><con:property>CustomData1Label</con:property><con:property>CustomData1</con:property><con:property>Cdvalue</con:property><con:property>Action</con:property><con:property>MaxAmount</con:property><con:property>ResCode</con:property><con:property>ResText</con:property><con:property>PayID</con:property><con:property>ResSuccess</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="request" id="f096a54c-73b1-4728-883e-8cc9fcc6e410" name="SubmitCustomerAccount"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitCustomerAccount</con:operation><con:request name="SubmitCustomerAccount" id="f150652e-580b-43d6-b48a-34dc6f81a0ea" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+<con:testCase id="d2fbc1ee-f65f-400f-98ce-794834b3f85a" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="SubmitCustomerAccount TestCase" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="d2fbc1ee-f65f-400f-98ce-794834b3f85afileName">SubmitCustomerAccount-TestCase</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSourceRegister" id="6850cbc0-8706-4f8d-a2b5-cb52bcda5087">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Excel">
+        <con:configuration>
+          <file>C:/SoapData/RegisterData.xlsx</file>
+          <worksheet>RegisterData</worksheet>
+          <cell>A2</cell>
+          <ignoreEmpty>false</ignoreEmpty>
+          <evaluateFormulas>false</evaluateFormulas>
+        </con:configuration>
+      </con:dataSource>
+      <con:property>ACNotes</con:property>
+      <con:property>TokenUserName</con:property>
+      <con:property>TokenPassword</con:property>
+      <con:property>TokenRequestID</con:property>
+      <con:property>TokenIdentifier</con:property>
+      <con:property>AccountNotes</con:property>
+      <con:property>CAL1</con:property>
+      <con:property>CAL2</con:property>
+      <con:property>Ccountry</con:property>
+      <con:property>Cemail</con:property>
+      <con:property>Cfname</con:property>
+      <con:property>Clname</con:property>
+      <con:property>Cmi</con:property>
+      <con:property>Cnotes</con:property>
+      <con:property>Cphone</con:property>
+      <con:property>Czip</con:property>
+      <con:property>Cpassword</con:property>
+      <con:property>Cdid</con:property>
+      <con:property>CustomData1Label</con:property>
+      <con:property>CustomData1</con:property>
+      <con:property>Cdvalue</con:property>
+      <con:property>Action</con:property>
+      <con:property>MaxAmount</con:property>
+      <con:property>ResCode</con:property>
+      <con:property>ResText</con:property>
+      <con:property>PayID</con:property>
+      <con:property>ResSuccess</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="f096a54c-73b1-4728-883e-8cc9fcc6e410" name="SubmitCustomerAccount">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>SubmitCustomerAccount</con:operation>
+      <con:request name="SubmitCustomerAccount" id="f150652e-580b-43d6-b48a-34dc6f81a0ea" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:SubmitCustomerAccount>
@@ -60,10 +124,96 @@
          </ws:accountInformation>
       </ws:SubmitCustomerAccount>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="XPath Match" id="a369f338-6fb0-4354-98e2-1f01322667ff" name="Match content of [ns0:ResultCode]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="XPath Match" id="a369f338-6fb0-4354-98e2-1f01322667ff" name="Match content of [ns0:ResultCode]">
+          <con:configuration>
+            <path>declare namespace ns0='http://www.ePayments.com/PPI';
 declare namespace ns1='https://www.velocitypayment.com/ws';
-//ns1:SubmitCustomerAccountResponse[1]/ns1:SubmitCustomerAccountResult[1]/ns0:ResultCode[1]/text()</path><content>${DataSourceRegister#ResCode}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="f6eefac0-588d-44d3-9a7a-6ff15f1c7aee" name="Match content of [ns0:ResultText]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+//ns1:SubmitCustomerAccountResponse[1]/ns1:SubmitCustomerAccountResult[1]/ns0:ResultCode[1]/text()</path>
+            <content>${DataSourceRegister#ResCode}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="XPath Match" id="f6eefac0-588d-44d3-9a7a-6ff15f1c7aee" name="Match content of [ns0:ResultText]">
+          <con:configuration>
+            <path>declare namespace ns0='http://www.ePayments.com/PPI';
 declare namespace ns1='https://www.velocitypayment.com/ws';
-//ns1:SubmitCustomerAccountResponse[1]/ns1:SubmitCustomerAccountResult[1]/ns0:ResultText[1]/text()</path><content>${DataSourceRegister#ResText}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="cd0e57c3-f2ea-4764-8976-002c00968a95" name="Match content of [ns0:Success]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+//ns1:SubmitCustomerAccountResponse[1]/ns1:SubmitCustomerAccountResult[1]/ns0:ResultText[1]/text()</path>
+            <content>${DataSourceRegister#ResText}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="XPath Match" id="cd0e57c3-f2ea-4764-8976-002c00968a95" name="Match content of [ns0:Success]">
+          <con:configuration>
+            <path>declare namespace ns0='http://www.ePayments.com/PPI';
 declare namespace ns1='https://www.velocitypayment.com/ws';
-//ns1:SubmitCustomerAccountResponse[1]/ns1:SubmitCustomerAccountResult[1]/ns0:Success[1]/text()</path><content>${DataSourceRegister#ResSuccess}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitCustomerAccount" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="datagen" name="DataGen1" id="17cf8be0-1744-438e-b294-772371bb7b88"><con:settings/><con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:property type="Number"><con:configuration><start>10000</start><end>100000000000</end><step/><pattern/><random>true</random><persist>false</persist></con:configuration><con:name>RandomNumber</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="43ac483f-ca9e-43cc-912c-8d6e5139f45e"><con:settings/><con:config><dataSourceStep>DataSourceRegister</dataSourceStep><targetStep>SubmitCustomerAccount</targetStep></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>ef9b0414-5d99-4617-8aac-1b97f7129650</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>5e285730-24e0-49ff-b217-df41c260113b</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>8efbad68-ce56-4d58-9e4b-4fecc19dd987</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>b2bf1a69-3ba3-4fd6-ac14-35c1804d1977</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:tagId>2a7bf078-df0c-46fa-84ea-5bd472eb578f</con:tagId></con:testCase>
+//ns1:SubmitCustomerAccountResponse[1]/ns1:SubmitCustomerAccountResult[1]/ns0:Success[1]/text()</path>
+            <content>${DataSourceRegister#ResSuccess}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitCustomerAccount" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datagen" name="DataGen1" id="17cf8be0-1744-438e-b294-772371bb7b88">
+    <con:settings/>
+    <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:property type="Number">
+        <con:configuration>
+          <start>10000</start>
+          <end>100000000000</end>
+          <step/>
+          <pattern/>
+          <random>true</random>
+          <persist>false</persist>
+        </con:configuration>
+        <con:name>RandomNumber</con:name>
+        <con:mode>STEP</con:mode>
+        <con:shared>false</con:shared>
+      </con:property>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="43ac483f-ca9e-43cc-912c-8d6e5139f45e">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSourceRegister</dataSourceStep>
+      <targetStep>SubmitCustomerAccount</targetStep>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>ef9b0414-5d99-4617-8aac-1b97f7129650</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>5e285730-24e0-49ff-b217-df41c260113b</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>8efbad68-ce56-4d58-9e4b-4fecc19dd987</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b2bf1a69-3ba3-4fd6-ac14-35c1804d1977</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:tagId>2a7bf078-df0c-46fa-84ea-5bd472eb578f</con:tagId>
+</con:testCase>

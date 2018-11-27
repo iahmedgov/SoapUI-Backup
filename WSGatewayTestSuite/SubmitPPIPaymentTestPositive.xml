@@ -1,5 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="6d328d3c-72cd-427d-b448-1e67a5639e49" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="SubmitPPIPaymentTestPositive" searchProperties="true" maxResults="0" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="IncludeOverview">true</con:setting><con:setting id="IncludeResults">true</con:setting><con:setting id="FlowLayout">false</con:setting><con:setting id="ErrorDetails">true</con:setting><con:setting id="IncludeCoverage">true</con:setting><con:setting id="GeneratableJUnitReport@Style">Multiple Pages</con:setting><con:setting id="GeneratableJUnitReport@Folder"/><con:setting id="6d328d3c-72cd-427d-b448-1e67a5639e49fileName">SubmitPPIPaymentTestPositive</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="datasource" name="DataSourceSubmitPPIPaymentPositive" id="a326c9fe-8170-424a-8295-b6a5eb09c958"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>C:/SoapData/SubmitPaymentData.xlsx</file><worksheet>SubmitPPIPayment</worksheet><cell>A2</cell><ignoreEmpty>false</ignoreEmpty></con:configuration></con:dataSource><con:property>TestNotes</con:property><con:property>AT_Username</con:property><con:property>AT_Password</con:property><con:property>AT_RequestID</con:property><con:property>AT_Identifier</con:property><con:property>Notes</con:property><con:property>FeeType</con:property><con:property>FeeAmount</con:property><con:property>SegmentAmount</con:property><con:property>SegmentType</con:property><con:property>PaymentType</con:property><con:property>ProcessDate</con:property><con:property>UDF1Label</con:property><con:property>UDF1Value</con:property><con:property>UDF2Label</con:property><con:property>UDF2Value</con:property><con:property>UDF3Label</con:property><con:property>UDF3Value</con:property><con:property>UDF4Label</con:property><con:property>UDF4Value</con:property><con:property>UDF5Label</con:property><con:property>UDF5Value</con:property><con:property>UDF6Label</con:property><con:property>UDF6Value</con:property><con:property>UDF7Label</con:property><con:property>UDF7Value</con:property><con:property>UDF8Label</con:property><con:property>UDF8Value</con:property><con:property>UDF9Label</con:property><con:property>UDF9Value</con:property><con:property>UDF10Label</con:property><con:property>UDF10Value</con:property><con:property>C_AL1</con:property><con:property>C_AL2</con:property><con:property>C_Country</con:property><con:property>C_Email</con:property><con:property>C_FirstName</con:property><con:property>C_LastName</con:property><con:property>C_MI</con:property><con:property>C_Notest</con:property><con:property>C_Phone</con:property><con:property>C_ZIP</con:property><con:property>C_Username</con:property><con:property>C_Password</con:property><con:property>C_CAN</con:property><con:property>C_PreAuthOnly</con:property><con:property>C_PaymentSource</con:property><con:property>P_AccountName</con:property><con:property>P_AL1</con:property><con:property>P_AL2</con:property><con:property>P_Country</con:property><con:property>P_Phone</con:property><con:property>P_FirstName</con:property><con:property>P_LastName</con:property><con:property>P_MI</con:property><con:property>P_Email</con:property><con:property>P_ZIP</con:property><con:property>P_BusinessName</con:property><con:property>P_IsBusiness</con:property><con:property>V_ABA</con:property><con:property>V_AccountType</con:property><con:property>V_CheckNumber</con:property><con:property>V_CheckType</con:property><con:property>V_CheckPos</con:property><con:property>V_CVV</con:property><con:property>V_ExpDate</con:property><con:property>V_VehicleNumber</con:property><con:property>V_PMCategory</con:property><con:property>V_EnforcePin</con:property><con:property>ResultCode</con:property><con:property>ResultText</con:property><con:property>Success</con:property><con:completeLastOperation>true</con:completeLastOperation><con:restartOnRun>true</con:restartOnRun></con:config></con:testStep><con:testStep type="request" id="b493090b-b4c1-4850-9cde-c344f967b6cc" name="SubmitPPIPayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>SubmitPPIPayment</con:operation><con:request name="SubmitPPIPayment" id="cca17b28-ce9c-4350-90f9-d7d63fce8108" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
+<con:testCase id="6d328d3c-72cd-427d-b448-1e67a5639e49" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="SubmitPPIPaymentTestPositive" searchProperties="true" maxResults="0" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="GeneratableJUnitReport@Style">Multiple Pages</con:setting>
+    <con:setting id="GeneratableJUnitReport@Folder"/>
+    <con:setting id="6d328d3c-72cd-427d-b448-1e67a5639e49fileName">SubmitPPIPaymentTestPositive</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSourceSubmitPPIPaymentPositive" id="a326c9fe-8170-424a-8295-b6a5eb09c958">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Excel">
+        <con:configuration>
+          <file>C:/SoapData/SubmitPaymentData.xlsx</file>
+          <worksheet>SubmitPPIPayment</worksheet>
+          <cell>A2</cell>
+          <ignoreEmpty>false</ignoreEmpty>
+          <evaluateFormulas>false</evaluateFormulas>
+        </con:configuration>
+      </con:dataSource>
+      <con:property>TestNotes</con:property>
+      <con:property>AT_Username</con:property>
+      <con:property>AT_Password</con:property>
+      <con:property>AT_RequestID</con:property>
+      <con:property>AT_Identifier</con:property>
+      <con:property>Notes</con:property>
+      <con:property>FeeType</con:property>
+      <con:property>FeeAmount</con:property>
+      <con:property>SegmentAmount</con:property>
+      <con:property>SegmentType</con:property>
+      <con:property>PaymentType</con:property>
+      <con:property>ProcessDate</con:property>
+      <con:property>UDF1Label</con:property>
+      <con:property>UDF1Value</con:property>
+      <con:property>UDF2Label</con:property>
+      <con:property>UDF2Value</con:property>
+      <con:property>UDF3Label</con:property>
+      <con:property>UDF3Value</con:property>
+      <con:property>UDF4Label</con:property>
+      <con:property>UDF4Value</con:property>
+      <con:property>UDF5Label</con:property>
+      <con:property>UDF5Value</con:property>
+      <con:property>UDF6Label</con:property>
+      <con:property>UDF6Value</con:property>
+      <con:property>UDF7Label</con:property>
+      <con:property>UDF7Value</con:property>
+      <con:property>UDF8Label</con:property>
+      <con:property>UDF8Value</con:property>
+      <con:property>UDF9Label</con:property>
+      <con:property>UDF9Value</con:property>
+      <con:property>UDF10Label</con:property>
+      <con:property>UDF10Value</con:property>
+      <con:property>C_AL1</con:property>
+      <con:property>C_AL2</con:property>
+      <con:property>C_Country</con:property>
+      <con:property>C_Email</con:property>
+      <con:property>C_FirstName</con:property>
+      <con:property>C_LastName</con:property>
+      <con:property>C_MI</con:property>
+      <con:property>C_Notest</con:property>
+      <con:property>C_Phone</con:property>
+      <con:property>C_ZIP</con:property>
+      <con:property>C_Username</con:property>
+      <con:property>C_Password</con:property>
+      <con:property>C_CAN</con:property>
+      <con:property>C_PreAuthOnly</con:property>
+      <con:property>C_PaymentSource</con:property>
+      <con:property>P_AccountName</con:property>
+      <con:property>P_AL1</con:property>
+      <con:property>P_AL2</con:property>
+      <con:property>P_Country</con:property>
+      <con:property>P_Phone</con:property>
+      <con:property>P_FirstName</con:property>
+      <con:property>P_LastName</con:property>
+      <con:property>P_MI</con:property>
+      <con:property>P_Email</con:property>
+      <con:property>P_ZIP</con:property>
+      <con:property>P_BusinessName</con:property>
+      <con:property>P_IsBusiness</con:property>
+      <con:property>V_ABA</con:property>
+      <con:property>V_AccountType</con:property>
+      <con:property>V_CheckNumber</con:property>
+      <con:property>V_CheckType</con:property>
+      <con:property>V_CheckPos</con:property>
+      <con:property>V_CVV</con:property>
+      <con:property>V_ExpDate</con:property>
+      <con:property>V_VehicleNumber</con:property>
+      <con:property>V_PMCategory</con:property>
+      <con:property>V_EnforcePin</con:property>
+      <con:property>ResultCode</con:property>
+      <con:property>ResultText</con:property>
+      <con:property>Success</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="b493090b-b4c1-4850-9cde-c344f967b6cc" name="SubmitPPIPayment">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>SubmitPPIPayment</con:operation>
+      <con:request name="SubmitPPIPayment" id="cca17b28-ce9c-4350-90f9-d7d63fce8108" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:SubmitPPIPayment>
@@ -115,11 +226,91 @@
          </ws:payment>
       </ws:SubmitPPIPayment>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="XPath Match" id="9dacde76-604c-4830-b32a-052a763ad771" name="Match content of [ns0:ResultCode]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="XPath Match" id="9dacde76-604c-4830-b32a-052a763ad771" name="Match content of [ns0:ResultCode]">
+          <con:configuration>
+            <path>declare namespace ns0='http://www.ePayments.com/PPI';
 declare namespace ns1='https://www.velocitypayment.com/ws';
-//ns1:SubmitPPIPaymentResponse[1]/ns1:SubmitPPIPaymentResult[1]/ns0:ResultCode[1]/text()</path><content>${DataSourceSubmitPPIPaymentPositive#ResultCode}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="44e66fa1-6195-4ebd-9e44-c13e49d4f247" name="Match content of [ns0:ResultText]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+//ns1:SubmitPPIPaymentResponse[1]/ns1:SubmitPPIPaymentResult[1]/ns0:ResultCode[1]/text()</path>
+            <content>${DataSourceSubmitPPIPaymentPositive#ResultCode}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="XPath Match" id="44e66fa1-6195-4ebd-9e44-c13e49d4f247" name="Match content of [ns0:ResultText]">
+          <con:configuration>
+            <path>declare namespace ns0='http://www.ePayments.com/PPI';
 declare namespace ns1='https://www.velocitypayment.com/ws';
-//ns1:SubmitPPIPaymentResponse[1]/ns1:SubmitPPIPaymentResult[1]/ns0:ResultText[1]/text()</path><content>${DataSourceSubmitPPIPaymentPositive#ResultText}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="f955a935-1e3a-4e18-b5a3-faa547f791d1" name="Match content of [ns0:Success]"><con:configuration><path>declare namespace ns0='http://www.ePayments.com/PPI';
+//ns1:SubmitPPIPaymentResponse[1]/ns1:SubmitPPIPaymentResult[1]/ns0:ResultText[1]/text()</path>
+            <content>${DataSourceSubmitPPIPaymentPositive#ResultText}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="XPath Match" id="f955a935-1e3a-4e18-b5a3-faa547f791d1" name="Match content of [ns0:Success]">
+          <con:configuration>
+            <path>declare namespace ns0='http://www.ePayments.com/PPI';
 declare namespace ns1='https://www.velocitypayment.com/ws';
-//ns1:SubmitPPIPaymentResponse[1]/ns1:SubmitPPIPaymentResult[1]/ns0:Success[1]/text()</path><content>${DataSourceSubmitPPIPaymentPositive#Success}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitPPIPayment" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="datagen" name="DataGenDateTest" id="417fb383-c0a3-4cb3-87d1-34a188f1ad75"><con:settings/><con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:property type="Script"><con:configuration><script>def sdf = new java.text.SimpleDateFormat("yyyy-MM-dd")
-return sdf.format(new Date()) + "T08:59:00.000-04:00"</script></con:configuration><con:name>TodayDate</con:name><con:mode>STEP</con:mode><con:shared>false</con:shared></con:property></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop" id="0ddf6203-b886-40c3-8a87-876135f41c45"><con:settings/><con:config><dataSourceStep>DataSourceSubmitPPIPaymentPositive</dataSourceStep><targetStep>SubmitPPIPayment</targetStep></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>a326c9fe-8170-424a-8295-b6a5eb09c958</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>417fb383-c0a3-4cb3-87d1-34a188f1ad75</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>b493090b-b4c1-4850-9cde-c344f967b6cc</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>0ddf6203-b886-40c3-8a87-876135f41c45</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>
+//ns1:SubmitPPIPaymentResponse[1]/ns1:SubmitPPIPaymentResult[1]/ns0:Success[1]/text()</path>
+            <content>${DataSourceSubmitPPIPaymentPositive#Success}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/SubmitPPIPayment" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datagen" name="DataGenDateTest" id="417fb383-c0a3-4cb3-87d1-34a188f1ad75">
+    <con:settings/>
+    <con:config xsi:type="con:DataGeneratorStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:property type="Script">
+        <con:configuration>
+          <script>def sdf = new java.text.SimpleDateFormat("yyyy-MM-dd")
+return sdf.format(new Date()) + "T08:59:00.000-04:00"</script>
+        </con:configuration>
+        <con:name>TodayDate</con:name>
+        <con:mode>STEP</con:mode>
+        <con:shared>false</con:shared>
+      </con:property>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="0ddf6203-b886-40c3-8a87-876135f41c45">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSourceSubmitPPIPaymentPositive</dataSourceStep>
+      <targetStep>SubmitPPIPayment</targetStep>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>a326c9fe-8170-424a-8295-b6a5eb09c958</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>417fb383-c0a3-4cb3-87d1-34a188f1ad75</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b493090b-b4c1-4850-9cde-c344f967b6cc</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>0ddf6203-b886-40c3-8a87-876135f41c45</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

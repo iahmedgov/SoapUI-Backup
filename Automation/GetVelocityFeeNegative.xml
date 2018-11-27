@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="afbc0f93-dbea-4424-aa40-0bc06aad969b" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="GetVelocityFeeNegative" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="IncludeOverview">true</con:setting><con:setting id="IncludeResults">true</con:setting><con:setting id="FlowLayout">true</con:setting><con:setting id="ErrorDetails">true</con:setting><con:setting id="IncludeCoverage">true</con:setting><con:setting id="afbc0f93-dbea-4424-aa40-0bc06aad969bfileName">GetVelocityFeeNegative</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="datasource" name="DataSourceFeeNegative" id="120e13d4-5069-4daf-b2d9-3999491bee84"><con:settings/><con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:dataSource type="Excel"><con:configuration><file>C:/SoapData/FeeData.xlsx</file><worksheet>Sheet2</worksheet><cell>A2</cell><ignoreEmpty>true</ignoreEmpty></con:configuration></con:dataSource><con:property>Amount</con:property><con:property>PaymentType</con:property><con:property>Account</con:property><con:property>Success</con:property><con:property>ResultCode</con:property><con:property>ResultText</con:property><con:startRow/><con:endRow/><con:completeLastOperation>true</con:completeLastOperation><con:trimValues>false</con:trimValues><con:entitizeValues>false</con:entitizeValues><con:restartOnRun>true</con:restartOnRun><con:expandProperties>false</con:expandProperties></con:config></con:testStep><con:testStep type="request" id="69ff2a19-ca0c-4594-9105-fe8006ef5728" name="GetVelocityFee - Negative"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>GetVelocityFee</con:operation><con:request name="GetVelocityFee - Negative" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="acfc42fb-c0d1-4853-9e94-d6316a3c7c16" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
+<con:testCase id="afbc0f93-dbea-4424-aa40-0bc06aad969b" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="GetVelocityFeeNegative" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="afbc0f93-dbea-4424-aa40-0bc06aad969bfileName">GetVelocityFeeNegative</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSourceFeeNegative" id="120e13d4-5069-4daf-b2d9-3999491bee84">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Excel">
+        <con:configuration>
+          <file>C:/SoapData/FeeData.xlsx</file>
+          <worksheet>Sheet2</worksheet>
+          <cell>A2</cell>
+          <ignoreEmpty>true</ignoreEmpty>
+          <evaluateFormulas>false</evaluateFormulas>
+        </con:configuration>
+      </con:dataSource>
+      <con:property>Amount</con:property>
+      <con:property>PaymentType</con:property>
+      <con:property>Account</con:property>
+      <con:property>Success</con:property>
+      <con:property>ResultCode</con:property>
+      <con:property>ResultText</con:property>
+      <con:startRow/>
+      <con:endRow/>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:trimValues>false</con:trimValues>
+      <con:entitizeValues>false</con:entitizeValues>
+      <con:restartOnRun>true</con:restartOnRun>
+      <con:expandProperties>false</con:expandProperties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="69ff2a19-ca0c-4594-9105-fe8006ef5728" name="GetVelocityFee - Negative">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>GetVelocityFee</con:operation>
+      <con:request name="GetVelocityFee - Negative" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="acfc42fb-c0d1-4853-9e94-d6316a3c7c16" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://qa.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">
    <soapenv:Header/>
    <soapenv:Body>
       <ws:GetVelocityFee>
@@ -20,10 +68,79 @@
          
       </ws:GetVelocityFee>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="59c4bc6a-70dd-4556-af25-276b9bca9971" name="SOAP Response"/><con:assertion type="XPath Match" id="a1372a41-f16b-41f6-b37e-94b9d5940169" name="Match content of [ResultCode]"><con:configuration><path>declare namespace ns1='http://www.ePayments.com/PPI';
+</soapenv:Envelope>]]></con:request>
+        <con:assertion type="SOAP Response" id="59c4bc6a-70dd-4556-af25-276b9bca9971" name="SOAP Response"/>
+        <con:assertion type="XPath Match" id="a1372a41-f16b-41f6-b37e-94b9d5940169" name="Match content of [ResultCode]">
+          <con:configuration>
+            <path>declare namespace ns1='http://www.ePayments.com/PPI';
 declare namespace ns2='https://www.velocitypayment.com/ws';
-//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:ResultCode[1]/text()</path><content>${DataSourceFeeNegative#ResultCode}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="917fb7c5-1346-4e4e-a144-1bb9aa29403a" name="Match content of [ResultText]"><con:configuration><path>declare namespace ns1='http://www.ePayments.com/PPI';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:ResultCode[1]/text()</path>
+            <content>${DataSourceFeeNegative#ResultCode}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="XPath Match" id="917fb7c5-1346-4e4e-a144-1bb9aa29403a" name="Match content of [ResultText]">
+          <con:configuration>
+            <path>declare namespace ns1='http://www.ePayments.com/PPI';
 declare namespace ns2='https://www.velocitypayment.com/ws';
-//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:ResultText[1]/text()</path><content>${DataSourceFeeNegative#ResultText}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="XPath Match" id="aff93179-2bff-4765-b8d1-1081f5e42005" name="Match content of [Success]"><con:configuration><path>declare namespace ns1='http://www.ePayments.com/PPI';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:ResultText[1]/text()</path>
+            <content>${DataSourceFeeNegative#ResultText}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="XPath Match" id="aff93179-2bff-4765-b8d1-1081f5e42005" name="Match content of [Success]">
+          <con:configuration>
+            <path>declare namespace ns1='http://www.ePayments.com/PPI';
 declare namespace ns2='https://www.velocitypayment.com/ws';
-//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:Success[1]/text()</path><content>${DataSourceFeeNegative#Success}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/GetVelocityFee"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="datasourceloop" name="DataSource Loop Negative" id="81157636-dcf5-4b8f-99a2-a460bc302722"><con:settings/><con:config><dataSourceStep>DataSourceFeeNegative</dataSourceStep><targetStep>GetVelocityFee - Negative</targetStep></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>6b6b04a4-31cb-4be8-a30e-03aa4191b9a8</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>d6eee793-ef05-4b3f-b383-3ccab7881c5d</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>62396390-3287-460e-93a4-ba3fbf1cbb9d</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>b5821b9a-7264-4b20-8ae3-87a965c96bb3</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:tagId>f0543ac6-5797-4083-b0f5-de87f5a27846</con:tagId></con:testCase>
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:Success[1]/text()</path>
+            <content>${DataSourceFeeNegative#Success}</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/GetVelocityFee"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop Negative" id="81157636-dcf5-4b8f-99a2-a460bc302722">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSourceFeeNegative</dataSourceStep>
+      <targetStep>GetVelocityFee - Negative</targetStep>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>6b6b04a4-31cb-4be8-a30e-03aa4191b9a8</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>d6eee793-ef05-4b3f-b383-3ccab7881c5d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>62396390-3287-460e-93a4-ba3fbf1cbb9d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>b5821b9a-7264-4b20-8ae3-87a965c96bb3</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:tagId>f0543ac6-5797-4083-b0f5-de87f5a27846</con:tagId>
+</con:testCase>
