@@ -25,7 +25,6 @@ SubmitCustomerAccount-TestCase1.xml
 GetWalletQA.xml
 SubmitWalletQA.xml
 SubmitPaymentWalletQA.xml
-SubmitCustomerAccount-TestCase---UnRegister.xml
 SubmitPPIPaymentTestPositive.xml
 GetVelocityFeeNegativeAdvanced-TestCase.xml
 GetVelocityFeeSingleANDDualAdvanced-TestCase.xml
