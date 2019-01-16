@@ -37,13 +37,13 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:WalletID>180WalletID640</ppi:WalletID><ppi:Vehicle>
+            <ppi:WalletID>180WalletID709</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
-               <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
+               <ppip:AccountType/>
                <!--Optional:-->
                
-               <ppip:CheckType>Personal</ppip:CheckType>
+               <ppip:CheckType/>
                <ppip:CheckNumberPosition/>
                <!--Optional:-->
                
@@ -51,7 +51,7 @@
                
                <!--Optional:-->
                
-               <ppip:PaymentVehicleNumber>11111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
+               <ppip:CVV2Code>123</ppip:CVV2Code><ppip:ExpirationDate>12/22</ppip:ExpirationDate><ppip:PaymentVehicleNumber>4111111111111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory>
                <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
             </ppi:Vehicle>
             <!--Optional:-->
@@ -78,8 +78,8 @@
                
                <!--Optional:-->
                
-               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:Country>GB</ppi:Country><ppi:PhoneNumber>564556456456</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>W1A 1AA</ppi:ZipCode><ppi:BusinessName>gdfgdfg</ppi:BusinessName><ppi:IsBusinessName>true</ppi:IsBusinessName>
-            </ppi:Payor><ppi:ClientReferenceNumber>536563463</ppi:ClientReferenceNumber>
+               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:PhoneNumber>564556456456</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>1234567890</ppi:ZipCode><ppi:IsBusinessName>false</ppi:IsBusinessName>
+            </ppi:Payor><ppi:ClientReferenceNumber>536563554</ppi:ClientReferenceNumber>
             <!--Optional:-->
             
             <!--Optional:-->
@@ -189,7 +189,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:NickName>2325PC184</ppi:NickName><ppi:WalletID>2325PC184</ppi:WalletID><ppi:Vehicle>
+            <ppi:NickName>2325PC218</ppi:NickName><ppi:WalletID>2325PC218</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
                <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
@@ -203,7 +203,7 @@
                
                <!--Optional:-->
                
-               <ppip:PaymentVehicleNumber>11111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
+               <ppip:PaymentVehicleNumber>44444444</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
                <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
             </ppi:Vehicle>
             <!--Optional:-->
@@ -230,8 +230,8 @@
                
                <!--Optional:-->
                
-               <ppi:AddressLine1>1387 N DUPONT HWY</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>GB</ppi:Country><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>chotass</ppi:FirstName><ppi:LastName>chatriss</ppi:LastName><ppi:ZipCode>W1A 1AA</ppi:ZipCode><ppi:IsBusinessName>false</ppi:IsBusinessName>
-            </ppi:Payor><ppi:ClientReferenceNumber>2325PC183</ppi:ClientReferenceNumber>
+               <ppi:AddressLine1>1387 N DUPONT HWY</ppi:AddressLine1><ppi:AddressLine2>NULL</ppi:AddressLine2><ppi:Country>CA</ppi:Country><ppi:PhoneNumber>4106280790</ppi:PhoneNumber><ppi:FirstName>chotass</ppi:FirstName><ppi:LastName>chatriss</ppi:LastName><ppi:ZipCode>M5G2L2</ppi:ZipCode><ppi:IsBusinessName>false</ppi:IsBusinessName>
+            </ppi:Payor><ppi:ClientReferenceNumber>536563560</ppi:ClientReferenceNumber>
             <!--Optional:-->
             
             <!--Optional:-->
@@ -685,13 +685,13 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <ppi:WalletID>327WalletID118</ppi:WalletID><ppi:Vehicle>
+            <ppi:WalletID>327WalletID148</ppi:WalletID><ppi:Vehicle>
                <!--Optional:-->
                
-               <ppip:AbaNumber>256072691</ppip:AbaNumber><ppip:AccountType>Checking</ppip:AccountType>
+               <ppip:AccountType/>
                <!--Optional:-->
                
-               <ppip:CheckType>Personal</ppip:CheckType>
+               <ppip:CheckType/>
                <ppip:CheckNumberPosition/>
                <!--Optional:-->
                
@@ -699,7 +699,7 @@
                
                <!--Optional:-->
                
-               <ppip:PaymentVehicleNumber>11111111</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>Ach</ppip:PaymentMethodCategory>
+               <ppip:CVV2Code>123</ppip:CVV2Code><ppip:ExpirationDate>12/21</ppip:ExpirationDate><ppip:PaymentVehicleNumber>5424000000000015</ppip:PaymentVehicleNumber><ppip:PaymentMethodCategory>CreditCard</ppip:PaymentMethodCategory>
                <ppip:EnforcePinDebitValidation>false</ppip:EnforcePinDebitValidation>
             </ppi:Vehicle>
             <!--Optional:-->
@@ -726,8 +726,8 @@
                
                <!--Optional:-->
                
-               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:Country>CA</ppi:Country><ppi:PhoneNumber>564556456456</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>M5H2M9</ppi:ZipCode><ppi:IsBusinessName>false</ppi:IsBusinessName>
-            </ppi:Payor><ppi:ClientReferenceNumber>536563463100</ppi:ClientReferenceNumber>
+               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:Country>US</ppi:Country><ppi:PhoneNumber>2111111111</ppi:PhoneNumber><ppi:FirstName>fname</ppi:FirstName><ppi:LastName>lname</ppi:LastName><ppi:ZipCode>12345-6789</ppi:ZipCode><ppi:IsBusinessName>false</ppi:IsBusinessName>
+            </ppi:Payor><ppi:ClientReferenceNumber>536563463117</ppi:ClientReferenceNumber>
             <!--Optional:-->
             
             <!--Optional:-->

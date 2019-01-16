@@ -1463,7 +1463,7 @@ return sdf.format(new Date()) + "T08:59:00.000-04:00"</script>
                </ppi:PaymentSegment>
                <!--Optional:-->
                
-               <ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2018-10-15T14:59:00.000-04:00</ppi:ProcessDate><ppi:CustomData><ppi:ID>CustomData1</ppi:ID><ppi:Value>some custom data</ppi:Value></ppi:CustomData>
+               <ppi:PaymentType>Regular</ppi:PaymentType><ppi:ProcessDate>2019-01-10T14:59:00.000-04:00</ppi:ProcessDate><ppi:CustomData><ppi:ID>CustomData1</ppi:ID><ppi:Value>some custom data</ppi:Value></ppi:CustomData>
                <!--Zero or more repetitions:-->
                
             </ppi:AdditionalInfo>
@@ -1497,7 +1497,7 @@ return sdf.format(new Date()) + "T08:59:00.000-04:00"</script>
                
                <!--Optional:-->
                
-               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:FirstName>Michael</ppi:FirstName><ppi:LastName>Clarke</ppi:LastName><ppi:EmailAddress>imtiazster@gmail.com</ppi:EmailAddress><ppi:ZipCode>21054</ppi:ZipCode><ppi:BusinessName>business name</ppi:BusinessName><ppi:IsBusinessName>false</ppi:IsBusinessName>
+               <ppi:AddressLine1>2311 york road</ppi:AddressLine1><ppi:FirstName>Michael</ppi:FirstName><ppi:LastName>Clarke</ppi:LastName><ppi:EmailAddress>imtiazster@gmail.com</ppi:EmailAddress><ppi:ZipCode>21054</ppi:ZipCode><ppi:BusinessName>business name</ppi:BusinessName><ppi:IsBusinessName>true</ppi:IsBusinessName>
             </ppi:Payor>
             <!--Optional:-->
             <ppi:Vehicle>
