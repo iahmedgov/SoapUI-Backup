@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="42912504-2f44-46c3-a6e6-53493b24e523" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RefundPPIPayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="42912504-2f44-46c3-a6e6-53493b24e523fileName">RefundPPIPayment-TestCase</con:setting></con:settings><con:testStep type="request" id="d519c0c2-1763-43a7-9691-314ad6d895dd" name="RefundPPIPayment"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap12</con:interface><con:operation>RefundPPIPayment</con:operation><con:request name="RefundPPIPayment" id="b42f639a-3623-4d63-9c8a-ed01308c11bd" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">\r
+<con:testCase id="42912504-2f44-46c3-a6e6-53493b24e523" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RefundPPIPayment TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="42912504-2f44-46c3-a6e6-53493b24e523fileName">RefundPPIPayment-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="d519c0c2-1763-43a7-9691-314ad6d895dd" name="RefundPPIPayment">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap12</con:interface>
+      <con:operation>RefundPPIPayment</con:operation>
+      <con:request name="RefundPPIPayment" id="b42f639a-3623-4d63-9c8a-ed01308c11bd" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">\r
    <soap:Header/>\r
    <soap:Body>\r
       <ws:RefundPPIPayment>\r
@@ -131,4 +144,16 @@
          </ws:ppiPayment>\r
       </ws:RefundPPIPayment>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/RefundPPIPaymentRequest"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/RefundPPIPaymentRequest" mustUnderstand="NONE" version="200508"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

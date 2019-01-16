@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="9c6cd906-6ba0-4224-aa04-2052839ca237" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetPPIPaymentTypeSegments TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="9c6cd906-6ba0-4224-aa04-2052839ca237fileName">GetPPIPaymentTypeSegments-TestCase</con:setting></con:settings><con:testStep type="request" id="0e2115f1-18c9-4001-92a9-b7e59f25f082" name="GetPPIPaymentTypeSegments"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>GetPPIPaymentTypeSegments</con:operation><con:request name="GetPPIPaymentTypeSegments" id="2492acab-1aee-4c28-8db5-422b04111726" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+<con:testCase id="9c6cd906-6ba0-4224-aa04-2052839ca237" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetPPIPaymentTypeSegments TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9c6cd906-6ba0-4224-aa04-2052839ca237fileName">GetPPIPaymentTypeSegments-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="0e2115f1-18c9-4001-92a9-b7e59f25f082" name="GetPPIPaymentTypeSegments">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>GetPPIPaymentTypeSegments</con:operation>
+      <con:request name="GetPPIPaymentTypeSegments" id="2492acab-1aee-4c28-8db5-422b04111726" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ws:GetPPIPaymentTypeSegments>\r
@@ -16,4 +29,16 @@
          </ws:token>\r
       </ws:GetPPIPaymentTypeSegments>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/GetPPIPaymentTypeSegments"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/GetPPIPaymentTypeSegments" mustUnderstand="NONE" version="200508"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="46f9c9d4-3c7f-4579-8e40-9630a994da48" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SubmitPPIPaymentUsingWallet TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="46f9c9d4-3c7f-4579-8e40-9630a994da48fileName">SubmitPPIPaymentUsingWallet-TestCase</con:setting></con:settings><con:testStep type="request" id="45057e95-2b3e-4056-8f66-7577edbbdde5" name="SubmitPPIPaymentUsingWallet"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap12</con:interface><con:operation>SubmitPPIPaymentUsingWallet</con:operation><con:request name="SubmitPPIPaymentUsingWallet" id="e09c6a0a-7921-4026-a12a-929bf9b25d38" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">\r
+<con:testCase id="46f9c9d4-3c7f-4579-8e40-9630a994da48" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SubmitPPIPaymentUsingWallet TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="46f9c9d4-3c7f-4579-8e40-9630a994da48fileName">SubmitPPIPaymentUsingWallet-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="45057e95-2b3e-4056-8f66-7577edbbdde5" name="SubmitPPIPaymentUsingWallet">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap12</con:interface>
+      <con:operation>SubmitPPIPaymentUsingWallet</con:operation>
+      <con:request name="SubmitPPIPaymentUsingWallet" id="e09c6a0a-7921-4026-a12a-929bf9b25d38" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">\r
    <soap:Header/>\r
    <soap:Body>\r
       <ws:SubmitPPIPaymentUsingWallet>\r
@@ -83,4 +96,16 @@
          </ws:ppiWalletPayment>\r
       </ws:SubmitPPIPaymentUsingWallet>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/SubmitPPIPaymentUsingWalletRequest"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+</soap:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/SubmitPPIPaymentUsingWalletRequest" mustUnderstand="NONE" version="200508"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

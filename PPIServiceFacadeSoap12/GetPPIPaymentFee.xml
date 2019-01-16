@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="e83f6862-3cfb-4f78-8d7e-65d751d64919" isOneWay="false" action="https://www.velocitypayment.com/ws/GetPPIPaymentFee" name="GetPPIPaymentFee" bindingOperationName="GetPPIPaymentFee" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e83f6862-3cfb-4f78-8d7e-65d751d64919fileName">GetPPIPaymentFee</con:setting></con:settings><con:call id="7b25ef06-cb0d-4567-8370-b2760c379c60" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+<con:operation id="e83f6862-3cfb-4f78-8d7e-65d751d64919" isOneWay="false" action="https://www.velocitypayment.com/ws/GetPPIPaymentFee" name="GetPPIPaymentFee" bindingOperationName="GetPPIPaymentFee" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e83f6862-3cfb-4f78-8d7e-65d751d64919fileName">GetPPIPaymentFee</con:setting>
+  </con:settings>
+  <con:call id="7b25ef06-cb0d-4567-8370-b2760c379c60" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
    <soap:Header/>\r
    <soap:Body>\r
       <ws:GetPPIPaymentFee>\r
@@ -20,4 +28,12 @@
          <ws:clientAccountNumber>?</ws:clientAccountNumber>\r
       </ws:GetPPIPaymentFee>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/GetPPIPaymentFeeRequest"/></con:call></con:operation>
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/GetPPIPaymentFeeRequest"/>
+  </con:call>
+</con:operation>

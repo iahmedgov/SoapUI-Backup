@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="b94dae10-4e33-40ad-a6dc-4aae5c941891" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetIVRTransferOptions TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b94dae10-4e33-40ad-a6dc-4aae5c941891fileName">GetIVRTransferOptions-TestCase</con:setting></con:settings><con:testStep type="request" id="60d80db6-21ce-45ea-9d34-5f9c217ae020" name="GetIVRTransferOptions"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>GetIVRTransferOptions</con:operation><con:request name="GetIVRTransferOptions" id="422fe9e7-b6ff-4d78-8cbd-657b51fcd85a" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+<con:testCase id="b94dae10-4e33-40ad-a6dc-4aae5c941891" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetIVRTransferOptions TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b94dae10-4e33-40ad-a6dc-4aae5c941891fileName">GetIVRTransferOptions-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="60d80db6-21ce-45ea-9d34-5f9c217ae020" name="GetIVRTransferOptions">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>GetIVRTransferOptions</con:operation>
+      <con:request name="GetIVRTransferOptions" id="422fe9e7-b6ff-4d78-8cbd-657b51fcd85a" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ws:GetIVRTransferOptions>\r
@@ -18,4 +31,16 @@
          <ws:paymentType>?</ws:paymentType>\r
       </ws:GetIVRTransferOptions>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/GetIVRTransferOptions"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/GetIVRTransferOptions" mustUnderstand="NONE" version="200508"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

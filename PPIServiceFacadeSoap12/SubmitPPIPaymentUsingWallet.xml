@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="528a9758-b772-4da6-a8d2-3d8e2d2ab52c" isOneWay="false" action="https://www.velocitypayment.com/ws/SubmitPPIPaymentUsingWallet" name="SubmitPPIPaymentUsingWallet" bindingOperationName="SubmitPPIPaymentUsingWallet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="528a9758-b772-4da6-a8d2-3d8e2d2ab52cfileName">SubmitPPIPaymentUsingWallet</con:setting></con:settings><con:call id="679c4a74-885f-427c-90d1-766bade8d970" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">\r
+<con:operation id="528a9758-b772-4da6-a8d2-3d8e2d2ab52c" isOneWay="false" action="https://www.velocitypayment.com/ws/SubmitPPIPaymentUsingWallet" name="SubmitPPIPaymentUsingWallet" bindingOperationName="SubmitPPIPaymentUsingWallet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="528a9758-b772-4da6-a8d2-3d8e2d2ab52cfileName">SubmitPPIPaymentUsingWallet</con:setting>
+  </con:settings>
+  <con:call id="679c4a74-885f-427c-90d1-766bade8d970" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI" xmlns:ppip="http://www.ePayments.com/PPIPayment">\r
    <soap:Header/>\r
    <soap:Body>\r
       <ws:SubmitPPIPaymentUsingWallet>\r
@@ -83,4 +91,12 @@
          </ws:ppiWalletPayment>\r
       </ws:SubmitPPIPaymentUsingWallet>\r
    </soap:Body>\r
-</soap:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/SubmitPPIPaymentUsingWalletRequest"/></con:call></con:operation>
+</soap:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/ws/PPIServiceFacadeSoap/SubmitPPIPaymentUsingWalletRequest"/>
+  </con:call>
+</con:operation>

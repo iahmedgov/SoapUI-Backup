@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="45f6c0ae-a026-434d-83e3-60fd91952003" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ValidateFinancialInfo TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="45f6c0ae-a026-434d-83e3-60fd91952003fileName">ValidateFinancialInfo-TestCase</con:setting></con:settings><con:testStep type="request" id="66b9c59c-e2b8-4003-b55a-476fce1c8a19" name="ValidateFinancialInfo"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PPIServiceFacadeSoap</con:interface><con:operation>ValidateFinancialInfo</con:operation><con:request name="ValidateFinancialInfo" id="f96f7545-806a-4597-9d33-d8c3062ee2bf" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
+<con:testCase id="45f6c0ae-a026-434d-83e3-60fd91952003" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="ValidateFinancialInfo TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="45f6c0ae-a026-434d-83e3-60fd91952003fileName">ValidateFinancialInfo-TestCase</con:setting>
+  </con:settings>
+  <con:testStep type="request" id="66b9c59c-e2b8-4003-b55a-476fce1c8a19" name="ValidateFinancialInfo">
+    <con:settings/>
+    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:interface>PPIServiceFacadeSoap</con:interface>
+      <con:operation>ValidateFinancialInfo</con:operation>
+      <con:request name="ValidateFinancialInfo" id="f96f7545-806a-4597-9d33-d8c3062ee2bf" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings/>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://demo.velocitypayment.com:443/vgateway/VGatewayWebService</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="https://www.velocitypayment.com/ws" xmlns:ppi="http://www.ePayments.com/PPI">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <ws:ValidateFinancialInfo>\r
@@ -19,4 +32,16 @@
          <ws:input>?</ws:input>\r
       </ws:ValidateFinancialInfo>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="https://www.velocitypayment.com/ws/ValidateFinancialInfo"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
+</soapenv:Envelope>]]></con:request>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:wsaConfig action="https://www.velocitypayment.com/ws/ValidateFinancialInfo" mustUnderstand="NONE" version="200508"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
