@@ -1,0 +1,268 @@
+
+TestCase [GetVelocityFee TestCase] started at 2015-09-23 15:04:33.382
+Step 1 DataSourceFee finished with status:[OK], took 53ms
+Step 2 GetVelocityFee finished with assertion status:[OK], took 556ms
+Step 3 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 1
+Step 4 GetVelocityFee finished with assertion status:[OK], took 312ms
+Step 5 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 2
+Step 6 GetVelocityFee finished with assertion status:[OK], took 346ms
+Step 7 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 3
+Step 8 GetVelocityFee finished with assertion status:[OK], took 309ms
+Step 9 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 4
+Step 10 GetVelocityFee finished with assertion status:[OK], took 358ms
+Step 11 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 5
+Step 12 GetVelocityFee finished with assertion status:[OK], took 311ms
+Step 13 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 6
+Step 14 GetVelocityFee finished with assertion status:[FAILED], took 375ms
+[Match content of [PPIFeeValue]] XPathContains comparison failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()], expecting [10.00], actual was [0.00]
+Step 15 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 7
+Step 16 GetVelocityFee finished with assertion status:[OK], took 358ms
+Step 17 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 8
+Step 18 GetVelocityFee finished with assertion status:[OK], took 312ms
+Step 19 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 9
+Step 20 GetVelocityFee finished with assertion status:[OK], took 298ms
+Step 21 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 10
+Step 22 GetVelocityFee finished with assertion status:[OK], took 311ms
+Step 23 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 11
+Step 24 GetVelocityFee finished with assertion status:[OK], took 291ms
+Step 25 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 12
+Step 26 GetVelocityFee finished with assertion status:[OK], took 324ms
+Step 27 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 13
+Step 28 GetVelocityFee finished with assertion status:[OK], took 320ms
+Step 29 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 14
+Step 30 GetVelocityFee finished with assertion status:[FAILED], took 360ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 31 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 15
+Step 32 GetVelocityFee finished with assertion status:[FAILED], took 267ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 33 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 16
+Step 34 GetVelocityFee finished with assertion status:[FAILED], took 332ms
+[Match content of [PPIFeeValue]] XPathContains comparison failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()], expecting [], actual was [10.00]
+[Match content of [TenderType]] XPathContains comparison failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()], expecting [], actual was [MD]
+[Match content of [Success]] XPathContains comparison failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:Success[1]/text()], expecting [false], actual was [true]
+Step 35 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 17
+Step 36 GetVelocityFee finished with assertion status:[FAILED], took 309ms
+[Match content of [PPIFeeValue]] XPathContains comparison failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()], expecting [], actual was [10.00]
+[Match content of [TenderType]] XPathContains comparison failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()], expecting [], actual was [MD]
+[Match content of [Success]] XPathContains comparison failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:Success[1]/text()], expecting [false], actual was [true]
+Step 37 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 18
+Step 38 GetVelocityFee finished with assertion status:[FAILED], took 312ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 39 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 19
+Step 40 GetVelocityFee finished with assertion status:[FAILED], took 275ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 41 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 20
+Step 42 GetVelocityFee finished with assertion status:[FAILED], took 309ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 43 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 21
+Step 44 GetVelocityFee finished with assertion status:[FAILED], took 265ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 45 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 22
+Step 46 GetVelocityFee finished with assertion status:[FAILED], took 294ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 47 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 23
+Step 48 GetVelocityFee finished with assertion status:[FAILED], took 312ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 49 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 24
+Step 50 GetVelocityFee finished with assertion status:[FAILED], took 344ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 51 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 25
+Step 52 GetVelocityFee finished with assertion status:[FAILED], took 288ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 53 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 26
+Step 54 GetVelocityFee finished with assertion status:[FAILED], took 304ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 55 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 27
+Step 56 GetVelocityFee finished with assertion status:[FAILED], took 257ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 57 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 28
+Step 58 GetVelocityFee finished with assertion status:[FAILED], took 307ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 59 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 29
+Step 60 GetVelocityFee finished with assertion status:[FAILED], took 263ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 61 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 30
+Step 62 GetVelocityFee finished with assertion status:[FAILED], took 293ms
+[Match content of [PPIFeeValue]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:PPIFeeValue[1]/text()] in Response
+[Match content of [TenderType]] XPathContains assertion failed for path [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] : Exception:Missing content for xpath [declare namespace ns1='http://www.ePayments.com/PPI';
+declare namespace ns2='https://www.velocitypayment.com/ws';
+//ns2:GetVelocityFeeResponse[1]/ns2:GetVelocityFeeResult[1]/ns1:TenderType[1]/text()] in Response
+Step 63 DataSource LoopFee finished with status:[OK], took 0ms
+Current row = 31
+TestCase [GetVelocityFee TestCase] failed [Failing due to failed test step], time taken = 9925
