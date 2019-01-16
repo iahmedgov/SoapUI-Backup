@@ -37,6 +37,10 @@
 </xml-fragment>]]></con:setting>
     <con:setting id="ec98f6bc-0b3a-4405-a633-8e044f4f6879fileName">SoapUI08032017</con:setting>
   </con:settings>
+  <con:vcsConfiguration>
+    <con:vcsName>Git</con:vcsName>
+    <con:repositoryIdentifier>https://github.com/iahmedgov/SoapUI-Backup</con:repositoryIdentifier>
+  </con:vcsConfiguration>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
   <con:properties>
